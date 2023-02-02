@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Align utility classes */
+
+.align-h{
+    display: flex;
+    justify-content: center;
+}
+
+.align-v{
+    display: flex;
+    align-items: center;
+}
+
+.align-hv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.align-sa{
+    display: flex;
+    justify-content: space-around;
+}
