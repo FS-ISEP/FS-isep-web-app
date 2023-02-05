@@ -1,17 +1,31 @@
 <div class="topbar align-v">
-    <a routerLink="/" class="logo align-hv">Logótipo</a>
+
+    <a routerLink="/" class="logo align-hv">
+        <img class="fs-isep-logo" src="./../../assets/icons/fs-isep-logo.png" />
+    </a>
 
     <div class="nav-btns align-v">
-        <a routerLink="/about" class="nav-btn">Sobre</a>
-        <a routerLink="/team" class="nav-btn">Equipa</a>
-        <a routerLink="/sponsors" class="nav-btn">Patrocinadores</a>
-        <a routerLink="/contacts" class="nav-btn">Contactos</a>
-        <a routerLink="/" class="nav-btn">PT</a>
+        <a *ngFor="let btn of navbarButtons" routerLink="{{ btn.route }}" class="nav-btn align-v"
+            routerLinkActive="nav-btn-active">
+            {{ btn.name }}
+        </a>
+
+        <a routerLink="/" class="flag align-v">
+            <img class="pt-flag" src="./../../assets/icons/pt-flag.png"/>
+        </a>
 
         <div class="socials align-v align-sa">
-            <a href="/" class="insta-logo align-hv">I</a>
-            <a href="/" class="insta-logo align-hv">F</a>
-            <a href="/" class="insta-logo align-hv">Li</a>
+
+            <a href="/" class="social-logo align-v">
+                <img class="social-logo-img" src="./../../assets/icons/instagram-logo.png"/>
+            </a>
+            <a href="/" class="social-logo align-v">
+                <img class="social-logo-img" src="./../../assets/icons/facebook-logo.png"/>
+            </a>
+            <a href="/" class="social-logo align-v">
+                <img class="social-logo-img" src="./../../assets/icons/youtube_logo.png"/>
+            </a>
+
         </div>
     </div>
 </div>
