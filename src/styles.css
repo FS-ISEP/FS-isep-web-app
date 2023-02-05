@@ -32,3 +32,15 @@ a{
     display: flex;
     justify-content: space-around;
 }
+
+/* Font-faces */
+
+@font-face {
+    font-family: "Chuterolk";
+    src: local("Chuterolk"), url(./assets/fonts/CHUTEROLK.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Chuterolk-Rounded";
+    src: local("Chuterolk-Rounded"), url(./assets/fonts/CHUTEROLK-Rounded.ttf) format("truetype");
+}
