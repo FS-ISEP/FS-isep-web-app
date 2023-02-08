@@ -1,0 +1,4 @@
+.placeholder {
+    min-height: calc(100% - 72px - 72px);
+    background-color: lightgray;
+}

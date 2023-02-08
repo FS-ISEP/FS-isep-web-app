@@ -7,21 +7,14 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
-  navbarButtons = [
-    new NavBarButton("Sobre", "/about"),
-    new NavBarButton("Equipa", "/team"),
-    new NavBarButton("Patrocinadores", "/sponsors"),
-    new NavBarButton("Contactos", "/contacts"),
-  ]
+  lang = "pt"
 
-}
-
-class NavBarButton{
-  name: String
-  route: String
-
-  constructor(name: String, route: String){
-    this.name = name;
-    this.route = route;
+  public onLanguageChange(){
+    if(this.lang == "pt"){
+      this.lang = "en"
+    }else{
+      this.lang = "pt"
+    }
   }
+
 }

@@ -1,29 +1,37 @@
 <div class="topbar align-v">
 
-    <a routerLink="/" class="logo align-hv">
+    <!-- TODO arranjar icons com dimensões corretas -->
+    <a routerLink="/" class="logo align-v">
         <img class="fs-isep-logo" src="./../../assets/icons/fs-isep-logo.png" />
     </a>
 
     <div class="nav-btns align-v">
-        <a *ngFor="let btn of navbarButtons" routerLink="{{ btn.route }}" class="nav-btn align-v"
-            routerLinkActive="nav-btn-active">
-            {{ btn.name }}
-        </a>
+        <app-nav-buttons class="nav-btns-wrapper align-v" [lang]="lang"></app-nav-buttons>
 
-        <a routerLink="/" class="flag align-v">
-            <img class="pt-flag" src="./../../assets/icons/pt-flag.png"/>
-        </a>
+        <!-- TODO animate hover e click na flag -->
+        <div *ngIf="lang == 'pt'; then displayPtFlag; else displayEnFlag"></div>
+        <ng-template #displayPtFlag>
+            <a class="flag align-v" (click)="onLanguageChange()">
+                <img class="flag-img" src="./../../assets/icons/pt-flag.png" />
+            </a>
+        </ng-template>
+        <ng-template #displayEnFlag>
+            <a class="flag align-v" (click)="onLanguageChange()">
+                <img class="flag-img" src="./../../assets/icons/uk-flag.png" />
+            </a>
+        </ng-template>
 
-        <div class="socials align-v align-sa">
+        <div class="socials">
 
+            <!-- TODO Add real URL -->
             <a href="/" class="social-logo align-v">
-                <img class="social-logo-img" src="./../../assets/icons/instagram-logo.png"/>
+                <img class="social-logo-img" src="./../../assets/icons/instagram-logo.png" />
             </a>
             <a href="/" class="social-logo align-v">
-                <img class="social-logo-img" src="./../../assets/icons/facebook-logo.png"/>
+                <img class="social-logo-img" src="./../../assets/icons/facebook-logo.png" />
             </a>
             <a href="/" class="social-logo align-v">
-                <img class="social-logo-img" src="./../../assets/icons/youtube_logo.png"/>
+                <img class="social-logo-img" src="./../../assets/icons/youtube_logo.png" />
             </a>
 
         </div>

@@ -28,11 +28,6 @@ a{
     align-items: center;
 }
 
-.align-sa{
-    display: flex;
-    justify-content: space-around;
-}
-
 /* Font-faces */
 
 @font-face {
