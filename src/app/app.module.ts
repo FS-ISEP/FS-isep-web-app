@@ -9,6 +9,8 @@ import { TeamPageComponent } from './team-page/team-page.component';
 import { SponsorsPageComponent } from './sponsors-page/sponsors-page.component';
 import { ContactsPageComponent } from './contacts-page/contacts-page.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { NavButtonsComponent } from './navbar/nav-buttons/nav-buttons.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { NavbarComponent } from './navbar/navbar.component';
     TeamPageComponent,
     SponsorsPageComponent,
     ContactsPageComponent,
-    NavbarComponent
+    NavbarComponent,
+    NavButtonsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
