@@ -2,7 +2,7 @@
 
     <!-- TODO arranjar icons com dimensões corretas -->
     <a routerLink="/" class="logo align-v">
-        <img class="fs-isep-logo" src="./../../assets/icons/fs-isep-logo.png" />
+        <img class="fs-isep-logo" src="./assets/icons/fs-isep-logo.png" />
     </a>
 
     <div class="nav-btns align-v">
@@ -12,12 +12,12 @@
         <div *ngIf="lang == 'pt'; then displayPtFlag; else displayEnFlag"></div>
         <ng-template #displayPtFlag>
             <a class="flag align-v" (click)="onLanguageChange()">
-                <img class="flag-img" src="./../../assets/icons/pt-flag.png" />
+                <img class="flag-img" src="./assets/icons/pt-flag.png" />
             </a>
         </ng-template>
         <ng-template #displayEnFlag>
             <a class="flag align-v" (click)="onLanguageChange()">
-                <img class="flag-img" src="./../../assets/icons/uk-flag.png" />
+                <img class="flag-img" src="./assets/icons/uk-flag.png" />
             </a>
         </ng-template>
 
@@ -25,13 +25,13 @@
 
             <!-- TODO Add real URL -->
             <a href="/" class="social-logo align-v">
-                <img class="social-logo-img" src="./../../assets/icons/instagram-logo.png" />
+                <img class="social-logo-img" src="./assets/icons/instagram-logo.png" />
             </a>
             <a href="/" class="social-logo align-v">
-                <img class="social-logo-img" src="./../../assets/icons/facebook-logo.png" />
+                <img class="social-logo-img" src="./assets/icons/facebook-logo.png" />
             </a>
             <a href="/" class="social-logo align-v">
-                <img class="social-logo-img" src="./../../assets/icons/youtube_logo.png" />
+                <img class="social-logo-img" src="./assets/icons/youtube_logo.png" />
             </a>
 
         </div>
