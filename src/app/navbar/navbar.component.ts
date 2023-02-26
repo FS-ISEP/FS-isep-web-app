@@ -7,14 +7,4 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
-  lang = "pt"
-
-  public onLanguageChange(){
-    if(this.lang == "pt"){
-      this.lang = "en"
-    }else{
-      this.lang = "pt"
-    }
-  }
-
 }

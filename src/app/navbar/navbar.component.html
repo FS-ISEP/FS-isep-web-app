@@ -1,25 +1,13 @@
 <div class="topbar align-v">
 
-    <!-- TODO arranjar icons com dimensões corretas -->
     <a routerLink="/" class="logo align-v">
         <img class="fs-isep-logo" src="./assets/icons/fs-isep-logo.png" />
     </a>
 
     <div class="nav-btns align-v">
-        <app-nav-buttons class="nav-btns-wrapper align-v" [lang]="lang"></app-nav-buttons>
+        <app-nav-buttons class="nav-btns-wrapper align-v"></app-nav-buttons>
 
-        <!-- TODO animate hover e click na flag -->
-        <div *ngIf="lang == 'pt'; then displayPtFlag; else displayEnFlag"></div>
-        <ng-template #displayPtFlag>
-            <a class="flag align-v" (click)="onLanguageChange()">
-                <img class="flag-img" src="./assets/icons/pt-flag.png" />
-            </a>
-        </ng-template>
-        <ng-template #displayEnFlag>
-            <a class="flag align-v" (click)="onLanguageChange()">
-                <img class="flag-img" src="./assets/icons/uk-flag.png" />
-            </a>
-        </ng-template>
+        <app-lang-flag class="lang-flag-wrapper align-h"></app-lang-flag>
 
         <div class="socials">
 

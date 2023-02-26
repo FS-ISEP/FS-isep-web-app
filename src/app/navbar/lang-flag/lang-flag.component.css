@@ -1,0 +1,13 @@
+.flag{
+    cursor: pointer;
+    padding: 5px 5px;
+}
+
+.flag-img{
+    width: 20px;
+    transition: width .1s ease-in-out;
+}
+
+.flag:hover > .flag-img{
+    width: 25px;
+}
