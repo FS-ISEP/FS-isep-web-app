@@ -11,6 +11,7 @@ import { ContactsPageComponent } from './contacts-page/contacts-page.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NavButtonsComponent } from './navbar/nav-buttons/nav-buttons.component';
 import { FooterComponent } from './footer/footer.component';
+import { LangFlagComponent } from './navbar/lang-flag/lang-flag.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FooterComponent } from './footer/footer.component';
     ContactsPageComponent,
     NavbarComponent,
     NavButtonsComponent,
-    FooterComponent
+    FooterComponent,
+    LangFlagComponent
   ],
   imports: [
     BrowserModule,
