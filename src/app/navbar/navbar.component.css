@@ -13,24 +13,21 @@
     width: 100px;
 }
 
-.nav-btns, .nav-btns-wrapper{
+.nav-btns {
+    height: 100%;
+    margin-right: 50px;
+}
+
+.nav-btns-wrapper {
     height: 100%;
 }
 
-.lang-flag-wrapper{
+.lang-flag-wrapper {
     width: 100px;
 }
 
-.socials {
+.socials-wrapper {
     display: flex;
-    margin: 0 30px;
-    justify-content: space-around;
-}
-
-.social-logo {
-    margin: 0 5px;
-}
-
-.social-logo-img{
-    width: 20px;
+    width: 100px;
+    justify-content: space-between;
 }

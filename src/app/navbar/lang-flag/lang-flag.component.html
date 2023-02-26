@@ -1,4 +1,3 @@
-<!-- TODO animate hover e click na flag -->
 <div *ngIf="languageService.lang == 'pt'; then displayPtFlag; else displayEnFlag"></div>
 <ng-template #displayPtFlag>
     <a class="flag align-v" (click)="onLanguageChange()">

@@ -1,0 +1,12 @@
+.social-logo {
+    padding: 5px 5px;
+}
+
+.social-logo-img{
+    width: 20px;
+    transition: width .1s ease-in-out;
+}
+
+.social-logo:hover > .social-logo-img{
+    width: 25px;
+}
