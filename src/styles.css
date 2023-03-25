@@ -1,32 +1,71 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body {
+html,
+body {
     margin: 0;
     height: 100%;
     min-width: 1024px;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
 }
 
+/* Variables */
+
+:root {
+    --isep-red: #881a00;
+}
+
 /* Align utility classes */
 
-.align-h{
+.align-h {
     display: flex;
     justify-content: center;
 }
 
-.align-v{
+.align-v {
     display: flex;
     align-items: center;
 }
 
-.align-hv{
+.align-hv {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Default font styles */
+
+.paragraph {
+    font-family: "Chuterolk";
+    font-size: 10px;
+}
+
+.small-text {
+    font-family: "Chuterolk";
+    font-size: 15px;
+}
+
+.medium-text {
+    font-family: "Chuterolk";
+    font-size: 20px;
+}
+
+.small-header {
+    font-family: "Chuterolk";
+    font-size: 30px;
+}
+
+.medium-header {
+    font-family: "Chuterolk";
+    font-size: 40px;
+}
+
+.big-header {
+    font-family: "Chuterolk";
+    font-size: 50px;
 }
 
 /* Font-faces */
