@@ -1,4 +1,9 @@
-.placeholder {
-    min-height: calc(100% - 72px - 72px);
-    background-color: lightgray;
+.title {
+    height: 100px;
+    background-color: black;
+    color: white;
+}
+
+.main-img{
+    height: 500px;
 }
