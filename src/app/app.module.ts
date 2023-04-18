@@ -13,6 +13,7 @@ import { NavButtonsComponent } from './navbar/nav-buttons/nav-buttons.component'
 import { FooterComponent } from './footer/footer.component';
 import { LangFlagComponent } from './navbar/lang-flag/lang-flag.component';
 import { SocialsComponent } from './navbar/socials/socials.component';
+import { ShopPageComponent } from './shop-page/shop-page.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { SocialsComponent } from './navbar/socials/socials.component';
     NavButtonsComponent,
     FooterComponent,
     LangFlagComponent,
-    SocialsComponent
+    SocialsComponent,
+    ShopPageComponent
   ],
   imports: [
     BrowserModule,

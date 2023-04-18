@@ -12,7 +12,8 @@ export class NavButtonsComponent {
     new NavBarButton("Sobre", "About Us", "/about"),
     new NavBarButton("Equipa", "Team", "/team"),
     new NavBarButton("Patrocinadores", "Sponsors", "/sponsors"),
-    new NavBarButton("Contactos", "Contact Us", "/contacts"),
+    new NavBarButton("Loja", "Shop", "/shop"),
+    new NavBarButton("Contactos", "Contact Us", "/contacts")
   ]
 
   languageService: LanguageService;
