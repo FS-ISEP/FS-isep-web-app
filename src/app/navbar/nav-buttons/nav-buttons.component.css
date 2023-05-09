@@ -4,10 +4,23 @@
     font-family: "Chuterolk";
     font-size: 20px;
     box-shadow: inset 0 0 0 0 white;
+}
+
+.transition {
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
-.nav-btn:hover, .nav-btn-active {
+.fade-left:hover {
+    color: black;
+    box-shadow: inset 200px 0 0 0 white;
+}
+
+.fade-right:hover {
+    color: black;
+    box-shadow: inset -200px 0 0 0 white;
+}
+
+.active {
     color: black;
     box-shadow: inset 200px 0 0 0 white;
 }

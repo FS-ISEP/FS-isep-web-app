@@ -1,4 +1,5 @@
-import { Component} from '@angular/core';
+import { Component, HostListener, Input } from '@angular/core';
+import { NavBarButton } from 'src/app/navbar-button';
 import { LanguageService } from 'src/app/services/language.service';
 
 @Component({
@@ -8,36 +9,74 @@ import { LanguageService } from 'src/app/services/language.service';
 })
 export class NavButtonsComponent {
 
-  navbarButtons = [
-    new NavBarButton("Sobre", "About Us", "/about"),
-    new NavBarButton("Equipa", "Team", "/team"),
-    new NavBarButton("Patrocinadores", "Sponsors", "/sponsors"),
-    new NavBarButton("Loja", "Shop", "/shop"),
-    new NavBarButton("Contactos", "Contact Us", "/contacts")
-  ]
+  @Input() public navbarButtons: NavBarButton[] = [];
+
+  mousePosX?: number
+  directionX?: string
+  hasTransitionEnded: boolean = false
 
   languageService: LanguageService;
 
-  constructor(languageService: LanguageService){
-    this.languageService = languageService;
+  constructor(languageService: LanguageService) {
+    this.languageService = languageService
+  }
+
+  @HostListener('document:mousemove', ['$event'])
+  public globalMouseMoveHandler(e: MouseEvent) {
+    if (this.mousePosX) {
+      this.directionX = e.pageX > this.mousePosX ? 'right' : 'left'
+    }
+
+    this.mousePosX = e.pageX
+  }
+
+  public mouseMoveHandler(e: MouseEvent) {
+    if (!this.hasTransitionEnded) {
+      return
+    }
+
+    var element = e.target as HTMLElement;
+
+    if (element.classList.contains('fade-left') && this.directionX == "right") {
+      element.classList.remove('fade-left');
+      element.classList.add('fade-right');
+    } else if (element.classList.contains('fade-right') && this.directionX == "left") {
+      element.classList.remove('fade-right');
+      element.classList.add('fade-left');
+    }
+
   }
 
   public transitionEndHandler(e: TransitionEvent) {
-    if (e.propertyName == "box-shadow") {
-      var element = e.target as HTMLElement;
-      console.log(e);
+    if (e.propertyName != "box-shadow") {
+      return
+    }
+
+    var element = e.target as HTMLElement;
+
+    if (element.classList.contains('fade-left') || element.classList.contains('fade-right')) {
+      element.classList.remove('transition');
+      this.hasTransitionEnded = true
     }
   }
-}
 
-class NavBarButton {
-  name_pt: String
-  name_uk: String
-  route: String
+  public mouseEnterHandler(e: MouseEvent) {
+    var element = e.target as HTMLElement;
 
-  constructor(name_pt: String, name_uk: String, route: String) {
-    this.name_pt = name_pt;
-    this.name_uk = name_uk;
-    this.route = route;
+    this.directionX == "left" ? element.classList.add('fade-right') : element.classList.add('fade-left')
+  }
+
+  public mouseLeaveHandler(e: MouseEvent) {
+    var element = e.target as HTMLElement;
+
+    element.classList.add('transition');
+    this.hasTransitionEnded = false
+
+    if (element.classList.contains('fade-left')) {
+      element.classList.remove('fade-left');
+    }
+    if (element.classList.contains('fade-right')) {
+      element.classList.remove('fade-right');
+    }
   }
 }

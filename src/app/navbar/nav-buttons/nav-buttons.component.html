@@ -1,15 +1,19 @@
 <div *ngIf="languageService.lang == 'pt'; then displayPtBtns; else displayEnBtns"></div>
 
 <ng-template #displayPtBtns>
-    <a *ngFor="let btn of navbarButtons" routerLink="{{ btn.route }}" class="nav-btn align-v"
-        routerLinkActive="nav-btn-active" (transitionend)="transitionEndHandler($event)">
+    <a *ngFor="let btn of navbarButtons" routerLink="{{ btn.route }}" class="nav-btn align-v transition"
+        routerLinkActive="active" (transitionend)="transitionEndHandler($event)"
+        (mouseenter)='mouseEnterHandler($event)' (mouseleave)='mouseLeaveHandler($event)'
+        (mousemove)='mouseMoveHandler($event)'>
         {{ btn.name_pt }}
     </a>
 </ng-template>
 
 <ng-template #displayEnBtns>
-    <a *ngFor="let btn of navbarButtons" routerLink="{{ btn.route }}" class="nav-btn align-v"
-        routerLinkActive="nav-btn-active" (transitionend)="transitionEndHandler($event)">
+    <a *ngFor="let btn of navbarButtons" routerLink="{{ btn.route }}" class="nav-btn align-v transition"
+        routerLinkActive="active" (transitionend)="transitionEndHandler($event)"
+        (mouseenter)='mouseEnterHandler($event)' (mouseleave)='mouseLeaveHandler($event)'
+        (mousemove)='mouseMoveHandler($event)'>
         {{ btn.name_uk }}
     </a>
 </ng-template>
