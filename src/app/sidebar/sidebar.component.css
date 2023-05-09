@@ -1,0 +1,69 @@
+.background-blur {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+
+    width: 100vw;
+    height: 100vh;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7));
+}
+
+.sidebar {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    z-index: 2;
+
+    width: 200px;
+    height: calc(100vh + 70px);
+    transition: all 0.3s;
+}
+
+.sidebar.hidden {
+    width: 0px;
+}
+
+/* Hide nav elements when sidebar closed */
+.sidebar.hidden>a>* {
+    display: none;
+}
+
+.close-sidebar-btn {
+    width: 100%;
+    height: 70px;
+
+    background: transparent linear-gradient(103deg, #FFFFFF 0%, #F0F0F0 100%) 0% 0% no-repeat padding-box;
+
+    cursor: pointer;
+}
+
+.close-icon {
+    width: 40px;
+    transition: all 0.3s;
+}
+
+.close-sidebar-btn:hover>.close-icon {
+    width: 50px;
+}
+
+.sidebar-nav-btn {
+    height: 50px;
+    background-color: var(--white-gray);
+    color: black;
+    cursor: pointer;
+    font-family: "Chuterolk";
+    font-size: 1.3rem;
+}
+
+.sidebar-nav-btn:hover {
+    background-color: darkgray;
+}
+
+.sidebar-footer {
+    flex-grow: 1;
+    background-color: var(--white-gray);
+}

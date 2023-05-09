@@ -1,0 +1,23 @@
+<a *ngIf="!collapseSidebar" class="background-blur" (click)="toggleSideNav()"></a>
+
+<nav class="sidebar" [ngClass]="{'hidden': collapseSidebar }">
+    <a class="close-sidebar-btn align-hv" (click)="toggleSideNav()">
+        <img class="close-icon" src="./assets/icons/close.png" alt="close button" />
+    </a>
+
+    <div *ngIf="languageService.lang == 'pt'; then displayPtBtns; else displayEnBtns"></div>
+
+    <ng-template #displayPtBtns>
+        <a *ngFor="let btn of navbarButtons" routerLink="{{ btn.route }}" class="sidebar-nav-btn align-hv">
+            <span>{{ btn.name_pt }}</span>
+        </a>
+    </ng-template>
+
+    <ng-template #displayEnBtns>
+        <a *ngFor="let btn of navbarButtons" routerLink="{{ btn.route }}" class="sidebar-nav-btn align-hv">
+            <span>{{ btn.name_uk }}</span>
+        </a>
+    </ng-template>
+
+    <div class="sidebar-footer"></div>
+</nav>

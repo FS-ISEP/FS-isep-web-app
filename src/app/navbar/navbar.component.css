@@ -5,7 +5,7 @@
 }
 
 .logo {
-    margin-left: 50px;
+    margin-left: 3%;
 }
 
 .fs-isep-logo {
@@ -14,7 +14,7 @@
 
 .nav-btns {
     height: 100%;
-    margin-right: 50px;
+    margin-right: 3%;
 }
 
 .nav-btns-wrapper {
@@ -29,4 +29,13 @@
     display: flex;
     width: 100px;
     justify-content: space-between;
+}
+
+.sidebar-toggler {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.closed_sidebar_icon {
+    width: 40px;
 }

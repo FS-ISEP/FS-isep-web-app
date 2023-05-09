@@ -14,6 +14,7 @@ import { FooterComponent } from './footer/footer.component';
 import { LangFlagComponent } from './navbar/lang-flag/lang-flag.component';
 import { SocialsComponent } from './navbar/socials/socials.component';
 import { ShopPageComponent } from './shop-page/shop-page.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ShopPageComponent } from './shop-page/shop-page.component';
     FooterComponent,
     LangFlagComponent,
     SocialsComponent,
-    ShopPageComponent
+    ShopPageComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,

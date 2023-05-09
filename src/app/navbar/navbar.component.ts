@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, HostListener, Input, Output } from '@angular/core';
+import { NavBarButton } from '../navbar-button';
 
 @Component({
   selector: 'app-navbar',
@@ -6,5 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
+
+  @Input() public showSidebar: boolean = false;
+  @Input() public collapseSidebar: boolean = false;
+  @Input() public navbarButtons: NavBarButton[] = [];
+
+  @Output()
+  sidebarToggled = new EventEmitter();
+
+  toggleSideNav() {
+    this.sidebarToggled.emit();
+  }
 
 }

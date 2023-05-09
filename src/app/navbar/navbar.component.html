@@ -1,14 +1,24 @@
 <div class="topbar align-v">
 
     <a routerLink="/" class="logo align-v">
-        <img class="fs-isep-logo" src="./assets/icons/fs-isep-logo.png" />
+        <img class="fs-isep-logo" src="./assets/icons/fs-isep-logo.png" alt="formula student isep logo" />
     </a>
 
-    <div class="nav-btns align-v">
-        <app-nav-buttons class="nav-btns-wrapper align-v"></app-nav-buttons>
+    <div *ngIf="showSidebar; then renderSidebarToggle; else renderNavBtns"></div>
 
-        <app-lang-flag class="lang-flag-wrapper align-h"></app-lang-flag>
+    <ng-template #renderNavBtns>
+        <div class="nav-btns align-v">
+            <app-nav-buttons class="nav-btns-wrapper align-v" [navbarButtons]="navbarButtons"></app-nav-buttons>
 
-        <app-socials class="socials-wrapper"></app-socials>
-    </div>
+            <app-lang-flag class="lang-flag-wrapper align-h"></app-lang-flag>
+
+            <app-socials class="socials-wrapper"></app-socials>
+        </div>
+    </ng-template>
+
+    <ng-template #renderSidebarToggle>
+        <a class="sidebar-toggler align-hv" (click)="toggleSideNav()">
+            <img class="closed_sidebar_icon" src="./assets/icons/closed_sidebar.png" alt="sidebar button" />
+        </a>
+    </ng-template>
 </div>
