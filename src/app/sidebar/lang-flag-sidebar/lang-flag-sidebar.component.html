@@ -1,0 +1,11 @@
+<a class="flag align-hv" (click)="onLanguageChange()">
+    <div *ngIf="languageService.lang == 'pt'; then displayPtFlag; else displayEnFlag"></div>
+
+    <ng-template #displayPtFlag>
+        <img *ngIf="!isSidebarHidden" class="flag-img" src="./assets/icons/pt-flag.png" />
+    </ng-template>
+
+    <ng-template #displayEnFlag>
+        <img *ngIf="!isSidebarHidden" class="flag-img" src="./assets/icons/uk-flag.png" />
+    </ng-template>
+</a>

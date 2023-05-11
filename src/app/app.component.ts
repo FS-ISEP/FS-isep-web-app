@@ -12,7 +12,7 @@ export class AppComponent {
   readonly MAX_FULL_CONTENT_WIDTH_PX = 992;
 
   public showSidebar: boolean = false;
-  public collapseSidebar: boolean = true;
+  public isSidebarHidden: boolean = true;
 
   navbarButtons = [
     new NavBarButton("Sobre", "About Us", "/about"),
@@ -35,16 +35,14 @@ export class AppComponent {
     window.innerWidth < this.MAX_FULL_CONTENT_WIDTH_PX ? this.showSidebar = true : this.showSidebar = false;
   }
 
-  toggleSideNav(): void {
-    this.collapseSidebar = !this.collapseSidebar;
+  toggleSidebar(): void {
+    this.isSidebarHidden = !this.isSidebarHidden;
 
     // Disable scroll when sidebar is visible. Scroll bar width is 17px
-    if (this.collapseSidebar) {
+    if (this.isSidebarHidden) {
       document.body.style.overflow = "auto";
-      document.body.style.paddingRight = "0px";
     } else {
       document.body.style.overflow = "hidden";
-      document.body.style.paddingRight = "17px";
     }
   }
 }

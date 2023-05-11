@@ -15,6 +15,9 @@ import { LangFlagComponent } from './navbar/lang-flag/lang-flag.component';
 import { SocialsComponent } from './navbar/socials/socials.component';
 import { ShopPageComponent } from './shop-page/shop-page.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { LangFlagSidebarComponent } from './sidebar/lang-flag-sidebar/lang-flag-sidebar.component';
+import { NavButtonsSidebarComponent } from './sidebar/nav-buttons-sidebar/nav-buttons-sidebar.component';
+import { SocialsSidebarComponent } from './sidebar/socials-sidebar/socials-sidebar.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,10 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     LangFlagComponent,
     SocialsComponent,
     ShopPageComponent,
-    SidebarComponent
+    SidebarComponent,
+    LangFlagSidebarComponent,
+    NavButtonsSidebarComponent,
+    SocialsSidebarComponent
   ],
   imports: [
     BrowserModule,

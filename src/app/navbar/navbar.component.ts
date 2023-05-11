@@ -9,13 +9,13 @@ import { NavBarButton } from '../navbar-button';
 export class NavbarComponent {
 
   @Input() public showSidebar: boolean = false;
-  @Input() public collapseSidebar: boolean = false;
+  @Input() public isSidebarHidden: boolean = false;
   @Input() public navbarButtons: NavBarButton[] = [];
 
   @Output()
   sidebarToggled = new EventEmitter();
 
-  toggleSideNav() {
+  toggleSidebar() {
     this.sidebarToggled.emit();
   }
 

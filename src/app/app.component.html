@@ -1,9 +1,9 @@
-<app-navbar [showSidebar]="showSidebar" [collapseSidebar]="collapseSidebar" [navbarButtons]="navbarButtons"
-    (sidebarToggled)="toggleSideNav()"></app-navbar>
+<app-navbar [showSidebar]="showSidebar" [isSidebarHidden]="isSidebarHidden" [navbarButtons]="navbarButtons"
+    (sidebarToggled)="toggleSidebar()"></app-navbar>
 
 <router-outlet></router-outlet>
 
 <app-footer></app-footer>
 
-<app-sidebar *ngIf="showSidebar" [showSidebar]="showSidebar" [collapseSidebar]="collapseSidebar"
-    [navbarButtons]="navbarButtons" (sidebarToggled)="toggleSideNav()"></app-sidebar>
+<app-sidebar *ngIf="showSidebar" [showSidebar]="showSidebar" [isSidebarHidden]="isSidebarHidden"
+    [navbarButtons]="navbarButtons" (sidebarToggled)="toggleSidebar()"></app-sidebar>

@@ -1,0 +1,19 @@
+.flag {
+    height: 50px;
+    padding: 5px 5px;
+    background-color: var(--white-gray);
+    cursor: pointer;
+}
+
+.flag:hover {
+    background-color: darkgray;
+}
+
+.flag-img {
+    width: 30px;
+    transition: width .3s ease-in-out;
+}
+
+.flag:hover>.flag-img {
+    width: 40px;
+}

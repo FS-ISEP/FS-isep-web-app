@@ -1,0 +1,15 @@
+<div *ngIf="languageService.lang == 'pt'; then displayPtBtns; else displayEnBtns"></div>
+
+<ng-template #displayPtBtns>
+    <a *ngFor="let btn of navbarButtons" routerLink="{{ btn.route }}" class="sidebar-nav-btn align-hv"
+        (click)="toggleSidebar()">
+        <span *ngIf="!isSidebarHidden">{{ btn.name_pt }}</span>
+    </a>
+</ng-template>
+
+<ng-template #displayEnBtns>
+    <a *ngFor="let btn of navbarButtons" routerLink="{{ btn.route }}" class="sidebar-nav-btn align-hv"
+        (click)="toggleSidebar()">
+        <span *ngIf="!isSidebarHidden">{{ btn.name_uk }}</span>
+    </a>
+</ng-template>

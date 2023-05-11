@@ -10,19 +10,13 @@ import { LanguageService } from '../services/language.service';
 export class SidebarComponent {
 
   @Input() public showSidebar: boolean = false;
-  @Input() public collapseSidebar: boolean = false;
+  @Input() public isSidebarHidden: boolean = false;
   @Input() public navbarButtons: NavBarButton[] = [];
 
   @Output()
   sidebarToggled = new EventEmitter();
 
-  languageService: LanguageService;
-
-  constructor(languageService: LanguageService) {
-    this.languageService = languageService
-  }
-
-  toggleSideNav() {
+  toggleSidebar() {
     this.sidebarToggled.emit();
   }
 

@@ -50,19 +50,6 @@
     width: 50px;
 }
 
-.sidebar-nav-btn {
-    height: 50px;
-    background-color: var(--white-gray);
-    color: black;
-    cursor: pointer;
-    font-family: "Chuterolk";
-    font-size: 1.3rem;
-}
-
-.sidebar-nav-btn:hover {
-    background-color: darkgray;
-}
-
 .sidebar-footer {
     flex-grow: 1;
     background-color: var(--white-gray);
