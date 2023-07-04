@@ -6,8 +6,9 @@ This web application was created for the Formula Student project lead by ISEP.
 
 To run this project in a local environment, it is required:
 
-- Angular CLI
-- Angular devkit
+- Angular CLI <br>To run copy and paste in the terminal: <b>`npm install -g @angular/cli`</b>
+
+- Angular devkit <br>//To run copy and paste in the terminal: <b>`npm install -g @angular-devkit/build-angular`</b>
 
 Both can be obtained using Node.js packages.
 
