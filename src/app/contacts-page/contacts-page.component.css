@@ -7,3 +7,40 @@
 .placeholder {
     height: 500px;
 }
+
+.split {
+
+    width: 50%;
+    
+    z-index: 1;
+    top: 0;
+
+    padding-top: 900px;
+  }
+  
+  /* Control the left side */
+  .left {
+    left: 0;
+  }
+  
+  /* Control the right side */
+  .right {
+    right: 0;
+  }
+  
+  /* If you want the content centered horizontally and vertically */
+  .centered {
+    top: 50%;
+    left: 50%;
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  /* Style the image inside the centered container, if needed */
+  .centered form {
+    width: 150px;
+    border-radius: 50%;
+  }
+  .mailto{
+    color: black;
+  }
