@@ -4,11 +4,37 @@
     color: white;
 }
 
-.placeholder {
-    height: 500px;
+.content{
+    flex-direction: column;
+}
+
+.subtitle{
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.redline{
+    height: 5px;
+    background-color: var(--isep-red);
+    width: 60%;
+}
+
+.aboutus-text{
     font-size: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 80%;
     margin-top: 10px;
     text-align: justify;
+}
 
+.competition-img{
+    width: 80%;
+    margin-left: 10%;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.end-buffer{
+    height: 10px;
 }
