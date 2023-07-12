@@ -15,29 +15,14 @@
     padding-top: 900px;
   }
   
-  /* Control the left side */
-  .left {
-    left: 0;
-  }
-  
-  /* Control the right side */
-  .right {
-    right: 0;
-  }
-  
-  /* If you want the content centered horizontally and vertically */
-  .centered {
+form {
     top: 50%;
     left: 50%;
     margin-top: 50px;
     text-align: center;
+    
   }
-  
-  /* Style the image inside the centered container, if needed */
-  .centered form {
-    width: 150px;
-    border-radius: 50%;
-  }
+
   .mailto{
     color: black;
   }
@@ -52,13 +37,14 @@
     margin-left: 60px;
     display: inline-block;
 }
+
 .mapouter{
   margin-top: 20px;
 }
 
 .social-logo {
   padding: 25px 25px;
-  margin-left: 95px;
+  margin-left: 35px;
   display: inline-block;
 }
 
@@ -115,13 +101,17 @@ label{
   background-color: var(--isep-red);
   margin-top: 20px;
   padding: 12px 20px;
+} 
+table{
+  margin-top: 30px;
+  border: 0; 
+  width:100%;
 }
  
-.vertical {
-  border-left: 2px solid black;
-  height: 600px;
-  position:absolute;
-  margin-top: 5%;
-  margin-bottom: 40px;
-  left: 50%;
+.bar{
+  background-color: black;
+}
+
+.half{
+  width: 50%;
 }
