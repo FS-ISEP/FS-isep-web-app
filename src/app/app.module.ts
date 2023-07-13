@@ -18,6 +18,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { LangFlagSidebarComponent } from './sidebar/lang-flag-sidebar/lang-flag-sidebar.component';
 import { NavButtonsSidebarComponent } from './sidebar/nav-buttons-sidebar/nav-buttons-sidebar.component';
 import { SocialsSidebarComponent } from './sidebar/socials-sidebar/socials-sidebar.component';
+import { CarPageComponent } from './car-page/car-page.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { SocialsSidebarComponent } from './sidebar/socials-sidebar/socials-sideb
     SidebarComponent,
     LangFlagSidebarComponent,
     NavButtonsSidebarComponent,
-    SocialsSidebarComponent
+    SocialsSidebarComponent,
+    CarPageComponent
   ],
   imports: [
     BrowserModule,

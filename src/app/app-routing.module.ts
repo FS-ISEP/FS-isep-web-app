@@ -6,6 +6,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { SponsorsPageComponent } from './sponsors-page/sponsors-page.component';
 import { TeamPageComponent } from './team-page/team-page.component';
 import { ShopPageComponent } from './shop-page/shop-page.component';
+import { CarPageComponent } from './car-page/car-page.component';
 
 const routes: Routes = [
   { path: '', component: LandingPageComponent},
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'sponsors', component: SponsorsPageComponent},
   { path: 'shop', component: ShopPageComponent},
   { path: 'contacts', component: ContactsPageComponent},
+  { path: 'car', component: CarPageComponent},
 ];
 
 @NgModule({
