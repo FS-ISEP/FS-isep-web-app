@@ -1,44 +1,44 @@
 .title {
-    height: 100px;
-    background-color: black;
-    color: white;
+  height: 100px;
+  background-color: black;
+  color: white;
 }
 
 .placeholder {
-    height: 500px;
+  height: 500px;
 }
 
 .split {
-    width: 50%;
-    z-index: 1;
-    top: 0;
-    padding-top: 900px;
-  }
-  
-form {
-    top: 50%;
-    left: 50%;
-    margin-top: 50px;
-    text-align: center;
-    
-  }
-
-  .mailto{
-    color: black;
-  }
-  
-.contacts{
-  color: black;
-  font-size: 22px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 80%;
-    margin-top: 25px;
-    text-align: justify;
-    margin-left: 60px;
-    display: inline-block;
+  width: 50%;
+  z-index: 1;
+  top: 0;
+  padding-top: 900px;
 }
 
-.mapouter{
+form {
+  top: 50%;
+  left: 50%;
+  margin-top: 50px;
+  text-align: center;
+
+}
+
+.mailto {
+  color: black;
+}
+
+.contacts {
+  color: black;
+  font-size: 22px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 80%;
+  margin-top: 25px;
+  text-align: justify;
+  margin-left: 60px;
+  display: inline-block;
+}
+
+.mapouter {
   margin-top: 20px;
 }
 
@@ -48,7 +48,7 @@ form {
   display: inline-block;
 }
 
-.social-logo-img{
+.social-logo-img {
   width: 25px;
   margin-top: 20px;
   margin-right: 25px;
@@ -56,7 +56,8 @@ form {
 
 }
 
-input[type=text], select {
+input[type=text],
+select {
   width: 50%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -65,7 +66,8 @@ input[type=text], select {
   border-radius: 4px;
   box-sizing: border-box;
 }
- textarea{
+
+textarea {
   resize: none;
   width: 50%;
   padding: 12px 20px;
@@ -75,7 +77,8 @@ input[type=text], select {
   border-radius: 4px;
   box-sizing: border-box;
 }
-label{
+
+label {
   text-align: left;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   width: 50%;
@@ -83,7 +86,8 @@ label{
   display: inline-block;
   box-sizing: border-box;
 }
-.label-radio{
+
+.label-radio {
   text-align: left;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   width: 50%;
@@ -94,24 +98,25 @@ label{
   border-radius: 4px;
 }
 
-.btnsub{
+.btnsub {
   border: 1px solid #ccc;
   border-radius: 4px;
   color: white;
   background-color: var(--isep-red);
   margin-top: 20px;
   padding: 12px 20px;
-} 
-table{
-  margin-top: 30px;
-  border: 0; 
-  width:100%;
 }
- 
-.bar{
+
+table {
+  margin-top: 30px;
+  border: 0;
+  width: 100%;
+}
+
+.bar {
   background-color: black;
 }
 
-.half{
+.half {
   width: 50%;
 }
