@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    overflow-x: hidden;
+}
 
 html,
 body {
@@ -15,6 +18,7 @@ a {
 :root {
     --isep-red: #881a00;
     --white-gray: #F0F0F0;
+    --shadow-gray: #888888;
 }
 
 /* Align utility classes */
