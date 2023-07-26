@@ -19,6 +19,9 @@ import { LangFlagSidebarComponent } from './sidebar/lang-flag-sidebar/lang-flag-
 import { NavButtonsSidebarComponent } from './sidebar/nav-buttons-sidebar/nav-buttons-sidebar.component';
 import { SocialsSidebarComponent } from './sidebar/socials-sidebar/socials-sidebar.component';
 import { CarPageComponent } from './car-page/car-page.component';
+import { ContactInfoComponent } from './contacts-page/contact-info/contact-info.component';
+import { MailFormComponent } from './contacts-page/mail-form/mail-form.component';
+import { MapComponent } from './contacts-page/map/map.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +41,10 @@ import { CarPageComponent } from './car-page/car-page.component';
     LangFlagSidebarComponent,
     NavButtonsSidebarComponent,
     SocialsSidebarComponent,
-    CarPageComponent
+    CarPageComponent,
+    ContactInfoComponent,
+    MailFormComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
