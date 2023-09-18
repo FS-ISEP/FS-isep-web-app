@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { LanguageService } from '../services/language.service';
 
 @Component({
   selector: 'app-sponsors-page',
@@ -8,8 +9,17 @@ import { Title } from '@angular/platform-browser';
 })
 export class SponsorsPageComponent {
 
-  constructor(private titleService: Title) {
+  private readonly PT_MESSAGE = "Sem patrocinadores para a época corrente"
+  private readonly EN_MESSAGE = "No sponsors for the current season"
+
+  displayMessage: string = this.PT_MESSAGE
+
+  constructor(private titleService: Title, private languageService: LanguageService) {
     this.titleService.setTitle("Patrocinadores - Formula Student ISEP")
+  }
+
+  ngOnInit() {
+    this.displayMessage = this.languageService.lang == "pt" ? this.PT_MESSAGE : this.EN_MESSAGE
   }
 
 }

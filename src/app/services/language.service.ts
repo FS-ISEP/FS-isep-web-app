@@ -1,9 +1,16 @@
 import { Injectable } from '@angular/core';
+import { Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class LanguageService {
+
+  // Observable string source
+  private languageChangedSource = new Subject<string>();
+
+  // Observable string stream
+  languageChanged$ = this.languageChangedSource.asObservable();
 
   lang = "pt";
 
@@ -29,6 +36,7 @@ export class LanguageService {
 
     this.lang = lang;
     localStorage.setItem("lang", lang);
+    this.languageChangedSource.next(lang);
 
     return true;
   }
