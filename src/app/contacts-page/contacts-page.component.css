@@ -4,17 +4,19 @@
   color: white;
 }
 
-.mapouter {
-  margin-top: 60px;
-  height: 200px;
-  width: 100%;
-  margin-bottom: 47px;
-}
-
-.bar {
-  background-color: black;
+.table-wrapper{
+  margin-top: 50px;
 }
 
 .half {
-  width: 50%;
+  width: calc(50vw - 2.5px);
+}
+
+.redline {
+  width: 5px;
+  background-color: var(--isep-red);
+}
+
+.mapouter {
+  margin: 50px 0;
 }
