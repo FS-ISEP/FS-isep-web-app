@@ -1,21 +1,20 @@
 .title {
-    height: 100px;
-    background-color: black;
-    color: white;
+  height: 100px;
+  background-color: black;
+  color: white;
 }
 
-.mapouter{
+.mapouter {
   margin-top: 60px;
   height: 200px;
-  width:100%;
+  width: 100%;
   margin-bottom: 47px;
 }
 
-.bar{
+.bar {
   background-color: black;
 }
 
-.half{
+.half {
   width: 50%;
 }
-

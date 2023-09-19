@@ -1,29 +1,28 @@
-.contacts{
-    color: black;
-    font-size: 22px;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      width: 80%;
-      margin-top: 25px;
-      text-align: justify;
-      margin-left: 60px;
-      display: inline-block;
-  }
+.contacts {
+  color: black;
+  font-size: 22px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 80%;
+  margin-top: 25px;
+  text-align: justify;
+  margin-left: 60px;
+  display: inline-block;
+}
 
-  
+
 .social-logo {
-    padding: 25px 25px;
-    margin-left: 35px;
-    display: inline-block;
-  }
-  
-  .social-logo-img{
-    width: 25px;
-    margin-top: 20px;
-    margin-right: 25px;
-    transition: width .1s ease-in-out;
-  }
+  padding: 25px 25px;
+  margin-left: 35px;
+  display: inline-block;
+}
 
-  .mailto{
-    color: black;
-  }
-  
+.social-logo-img {
+  width: 25px;
+  margin-top: 20px;
+  margin-right: 25px;
+  transition: width .1s ease-in-out;
+}
+
+.mailto {
+  color: black;
+}
