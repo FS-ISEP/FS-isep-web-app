@@ -1,5 +1,5 @@
 iframe {
-    width: 1200px;
+    width: 70vw;
     height: 500px;
     border: 5px solid var(--isep-red);
 }
