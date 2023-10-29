@@ -1,0 +1,45 @@
+.form{
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.field {
+  width: 70%;
+}
+
+.field-label {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.required{
+  color: red;
+}
+
+.field-input {
+  width: 100%;
+  padding: 10px 10px;
+  margin-top: 2%;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: none;
+}
+
+textarea{
+  height: 15vh;
+}
+
+.btnsub {
+  border-radius: 4px;
+  color: white;
+  background-color: var(--isep-red);
+  padding: 12px 20px;
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btnsub:hover {
+  text-decoration: underline;
+}

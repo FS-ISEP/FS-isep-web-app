@@ -1,90 +1,15 @@
 <div class="title big-header align-hv">Contactos</div>
 
-<div>
-    <table>
-        <td class="half">
-            <div>
-                <div class="contacts align-hv"><a href="https://www.isep.ipp.pt" class="mailto"><img
-                            class="social-logo-img" src="./assets/icons/building.svg" />ISEP</a></div>
-                <div class="contacts align-hv"><img class="social-logo-img" src="./assets/icons/map.svg" /> R. Dr.
-                    António Bernardino de Almeida 431, 4249-015 Porto</div>
-                <div class="contacts align-hv"><a href="mailto:fsisep@gmail.com" class="mailto"><img
-                            class="social-logo-img" src="./assets/icons/envelope.svg" />fsisep@gmail.com</a></div>
-
-                <div class="contacts align-hv"><a href="https://www.instagram.com/fs_isep/" class="mailto"><img
-                            class="social-logo-img" src="./assets/icons/instagram-logo.svg" />@fs_isep</a></div>
-                <div class="contacts align-hv"><a href="https://www.linkedin.com/company/formula-student-isep/"
-                        class="mailto"><img class="social-logo-img" src="./assets/icons/linkedin-logo.svg" />Formula
-                        Student ISEP</a></div>
-                <div class="contacts align-hv"><a href="https://www.youtube.com/@FSISEP" class="mailto"> <img
-                            class="social-logo-img" src="./assets/icons/youtube-logo.svg" />Ainda não temos canal</a>
-                </div>
-            </div>
-        </td>
-        <td class="bar">
-            <div class="vertical"></div>
-        </td>
-        <td class="half">
-            <div>
-                <form target="_blank" action="https://formsubmit.co/bf2d829e41ce43e085a7f7ff4d09dcc9" method="POST">
-                    <div class="form-group">
-                        <div class="form-row">
-                            <div class="col">
-                                <div>
-                                    <label>Nome<span style="color: red;"><b>*</b></span></label>
-                                </div>
-                                <input type="text" name="Nome" class="name-box" placeholder="" required>
-                            </div>
-                            <div class="col">
-                                <div>
-                                    <label>Empresa<span style="color: red;"><b>*</b></span></label>
-                                </div>
-                                <div>
-                                    <select name="Empresa">
-                                        <option value="Sim">Sim</option>
-                                        <option value="Nao" selected="select">Não</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div>
-                                    <label>Email<span style="color: red;"><b>*</b></span></label>
-                                </div>
-                                <input type="text" name="Email" class="email-box" placeholder="" required>
-                            </div>
-                            <div class="col">
-                                <div>
-                                    <label>Mensagem<span style="color: red;"><b>*</b></span></label>
-                                </div>
-                                <textarea placeholder="" class="text-box" name="Mensagem" rows="10" required></textarea>
-                            </div>
-                        </div>
-                        <button type="submit" class="btnsub">Submit Form</button>
-                    </div>
-                </form>
-            </div>
-
-        </td>
-    </table>
-    <div class="mapouter align-hv">
-        <iframe class="gmap_iframe" width="100%" frameborder="0"
-            src="https://maps.google.com/maps?width=550&amp;height=275&amp;hl=en&amp;q=Instituto Superior de Engenharia do Porto&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-        <style>
-            .mapouter {
-                width: 100%;
-                height: 390px;
-            }
-
-            .gmap_canvas {
-                overflow: hidden;
-                background: none !important;
-                width: 100%;
-                height: 100%;
-            }
-
-            .gmap_iframe {
-                height: 100% !important;
-            }
-        </style>
+<div class="wrapper">
+    <div class="half">
+        <app-contact-info />
     </div>
+    <div class="separator"></div>
+    <div class="half">
+        <app-mail-form />
+    </div>
+</div>
+
+<div class="mapouter align-hv">
+    <app-map />
 </div>
