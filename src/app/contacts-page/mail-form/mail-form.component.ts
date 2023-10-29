@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class MailFormComponent {
 
+  onSubmit() {
+    console.log("WIP")
+  }
 }
