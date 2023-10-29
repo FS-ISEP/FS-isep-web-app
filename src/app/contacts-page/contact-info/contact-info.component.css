@@ -1,28 +1,20 @@
-.contacts {
-  color: black;
-  font-size: 22px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  width: 80%;
-  margin-top: 25px;
-  text-align: justify;
-  margin-left: 60px;
-  display: inline-block;
+.info-wrapper {
+  margin-left: 10%;
+  height: 20%;
 }
 
-
-.social-logo {
-  padding: 25px 25px;
-  margin-left: 35px;
-  display: inline-block;
+.info-subwrapper{
+  height: 100%;
 }
 
 .social-logo-img {
-  width: 25px;
-  margin-top: 20px;
-  margin-right: 25px;
-  transition: width .1s ease-in-out;
+  position: absolute;
+  width: 30px;
 }
 
-.mailto {
+.medium-text{
+  margin-left: 40px;
   color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.5vh;
 }

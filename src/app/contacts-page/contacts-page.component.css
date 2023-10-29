@@ -4,17 +4,22 @@
   color: white;
 }
 
-.table-wrapper{
+.wrapper{
   margin-top: 50px;
+  height: 50vh;
 }
 
 .half {
-  width: calc(50vw - 2.5px);
+  width: calc(50% - 2.5px);
+  height: inherit;
+  float: left;
 }
 
-.redline {
+.separator {
   width: 5px;
+  height: inherit;
   background-color: var(--isep-red);
+  float: left;  
 }
 
 .mapouter {
