@@ -1,38 +1,27 @@
-<div>
-    <form target="_blank" action="https://formsubmit.co/bf2d829e41ce43e085a7f7ff4d09dcc9" method="POST">
-        <div class="form-group">
-            <div class="form-row">
-                <div class="col">
-                    <div>
-                        <label>Nome<span style="color: red;"><b>*</b></span></label>
-                    </div>
-                    <input type="text" name="Nome" class="name-box" placeholder="" required>
-                </div>
-                <div class="col">
-                    <div>
-                        <label>Empresa<span style="color: red;"><b>*</b></span></label>
-                    </div>
-                    <div>
-                        <select name="Empresa">
-                            <option value="Sim">Sim</option>
-                            <option value="Nao" selected="select">Não</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col">
-                    <div>
-                        <label>Email<span style="color: red;"><b>*</b></span></label>
-                    </div>
-                    <input type="text" name="Email" class="email-box" placeholder="" required>
-                </div>
-                <div class="col">
-                    <div>
-                        <label>Mensagem<span style="color: red;"><b>*</b></span></label>
-                    </div>
-                    <textarea placeholder="" class="text-box" name="Mensagem" rows="10" required></textarea>
-                </div>
-            </div>
-            <button type="submit" class="btnsub">Submit Form</button>
+<div class="form align-hv">
+    <div class="field">
+        <div class="field-label align-v">
+            Nome
+            <span class="required"><b>*</b></span>
         </div>
-    </form>
+        <input type="text" name="Nome" class="field-input" required>
+    </div>
+
+    <div class="field">
+        <div class="field-label align-v">
+            Email
+            <span class="required"><b>*</b></span>
+        </div>
+        <input type="text" name="Nome" class="field-input" required>
+    </div>
+
+    <div class="field">
+        <div class="field-label align-v">
+            Mensagem
+            <span class="required"><b>*</b></span>
+        </div>
+        <textarea name="Mensagem" class="field-input" required></textarea>
+    </div>
+
+    <a class="btnsub" (click)="onSubmit()">Enviar</a>
 </div>
