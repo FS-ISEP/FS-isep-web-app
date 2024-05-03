@@ -2,18 +2,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
     background-color: rgba(0, 0, 0, 0.402);
     width: 100%;
-    height: 800px;
+    height: 900px;
     background-image: url('/assets/team_images/foto_teste.png.jpg');
     background-size: cover;
     background-position: center;
-
     background-blend-mode:darken;
   }
   
-  .title .title-text {
+  .title-text {
+    color: white;
+    font-size:150px;
+    font-weight: bold;
+    font-family: "Chuterolk";
+    filter: opacity(100%);
+  }
+  
+ .title-sub-text {
     color: white;
     font-size:50px;
     font-weight: bold;
