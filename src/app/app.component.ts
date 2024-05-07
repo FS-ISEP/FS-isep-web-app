@@ -15,11 +15,10 @@ export class AppComponent {
   public isSidebarHidden: boolean = true;
 
   navbarButtons = [
+    //new NavBarButton("Inicio", "Home", "/"),
     new NavBarButton("Sobre", "About Us", "/about"),
-    new NavBarButton("Equipa", "Team", "/team"),
     new NavBarButton("Carro", "Car", "/car"),
     new NavBarButton("Patrocinadores", "Sponsors", "/sponsors"),
-    new NavBarButton("Loja", "Shop", "/shop"),
     new NavBarButton("Contactos", "Contact Us", "/contacts")
    
   ]

@@ -1,7 +1,29 @@
 .title {
-    height: 100px;
-    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.402);
+    width: 100%;
+    height: 900px;
+    background-image: url('/assets/banner_images/sponsor-image.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode:darken;
+  }
+  
+.title-text {
     color: white;
+    font-size:150px;
+    font-weight: bold;
+    font-family: "Chuterolk";
+    filter: opacity(100%);
+}
+.title-sub-text {
+    color: white;
+    font-size:50px;
+    font-weight: bold;
+    font-family: "Chuterolk";
+    filter: opacity(100%);
 }
 
 .content {
@@ -14,35 +36,13 @@
     margin-top: 30px;
 }
 
-.silverline {
-    height: 10px;
-    background-color: silver;
-    width: 60%;
-}
-
-.bronzeline {
-    height: 8px;
-    background-color: #f87f07;
-    width: 60%;
-}
-
-.partnerline {
-    height: 5px;
-    background-color: green;
-    width: 60%;
-}
-
-.softwareline {
-    height: 5px;
-    background-color: skyblue;
-    width: 60%;
-}
-
-.instline {
+.line {
     height: 5px;
     background-color: var(--isep-red);
-    width: 60%;
+    width: 80%;
 }
+
+
 
 .aboutus-text {
     font-size: 25px;
@@ -61,14 +61,14 @@
 }
 
 .sponsor-view-silver {
-    width: 430px;
-    max-height: 250px;
+    width: 400px;
+    max-height: 350px;
     object-fit: cover;
     margin: 50px 50px;
 }
 
 .sponsor-view-bronze {
-    max-width: 350px;
+    max-width: 400px;
     max-height: 350px;
     object-fit: cover;
     margin: 50px 50px;
@@ -76,14 +76,14 @@
 
 .sponsor-view-partner {
     max-width: 200px;
-    max-height: 100px;
+    max-height: 350px;
     object-fit: cover;
     margin: 50px 50px;
 }
 
 .sponsor-view-software {
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 350px;
+    max-height: 350px;
     object-fit: cover;
     margin: 50px 50px;
 }
