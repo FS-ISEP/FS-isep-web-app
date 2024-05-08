@@ -1,22 +1,27 @@
-.form{
+.form
+{
   flex-direction: column;
   justify-content: space-around;
   height: 100%;
 }
 
-.field {
+.field 
+{
   width: 70%;
 }
 
-.field-label {
+.field-label 
+{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.required{
+.required
+{
   color: red;
 }
 
-.field-input {
+.field-input 
+{
   width: 100%;
   padding: 10px 10px;
   margin-top: 2%;
@@ -27,11 +32,13 @@
   resize: none;
 }
 
-textarea{
+textarea
+{
   height: 15vh;
 }
 
-.button {
+.button 
+{
   display: inline-block;
   padding: 10px 20px;
   background-color: var(--isep-red);
@@ -39,10 +46,10 @@ textarea{
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease;
-  
 }
 
-.button:hover {
+.button:hover 
+{
   color: black;
   box-shadow: inset 200px 0 0 0 white;
   transition: color .3s ease-in-out, box-shadow .3s ease-in-out;

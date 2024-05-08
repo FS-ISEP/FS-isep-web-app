@@ -1,18 +1,22 @@
-.info-wrapper {
+.info-wrapper 
+{
   margin-left: 10%;
   height: 20%;
 }
 
-.info-subwrapper{
+.info-subwrapper
+{
   height: 100%;
 }
 
-.social-logo-img {
+.social-logo-img 
+{
   position: absolute;
   width: 30px;
 }
 
-.medium-text{
+.medium-text
+{
   margin-left: 40px;
   color: black;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

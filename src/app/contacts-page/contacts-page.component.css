@@ -1,4 +1,5 @@
-.title {
+.title 
+{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,7 +12,8 @@
   background-blend-mode:darken;
 }
 
-.title-text {
+.title-text 
+{
   color: white;
   font-size:150px;
   font-weight: bold;
@@ -19,20 +21,21 @@
   filter: opacity(100%);
 }
 
-.wrapper{
+.wrapper
+{
   margin-top: 50px;
   height: 50vh;
 }
 
-.half {
+.half 
+{
   width: calc(50% - 2.5px);
   height: inherit;
   float: left;
 }
 
-
-
-.mapouter {
+.mapouter 
+{
   margin-top: 50px;
   width: 100%;
 }

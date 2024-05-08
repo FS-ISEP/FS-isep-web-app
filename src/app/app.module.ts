@@ -19,6 +19,12 @@ import { CarPageComponent } from './car-page/car-page.component';
 import { ContactInfoComponent } from './contacts-page/contact-info/contact-info.component';
 import { MailFormComponent } from './contacts-page/mail-form/mail-form.component';
 import { MapComponent } from './contacts-page/map/map.component';
+import { LAboutPageComponent } from './landing-page/l-about-page/l-about-page.component';
+import { LSponsorsPageComponent } from './landing-page/l-sponsors-page/l-sponsors-page.component';
+import { LCarPageComponent } from './landing-page/l-car-page/l-car-page.component';
+import { AHistoryPageComponent } from './about-page/a-history-page/a-history-page.component';
+import { ATeamPageComponent } from './about-page/a-team-page/a-team-page.component';
+import { AFsPageComponent } from './about-page/a-fs-page/a-fs-page.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +45,13 @@ import { MapComponent } from './contacts-page/map/map.component';
     CarPageComponent,
     ContactInfoComponent,
     MailFormComponent,
-    MapComponent
+    MapComponent,
+    LAboutPageComponent,
+    LSponsorsPageComponent,
+    LCarPageComponent,
+    AHistoryPageComponent,
+    ATeamPageComponent,
+    AFsPageComponent
   ],
   imports: [
     BrowserModule,

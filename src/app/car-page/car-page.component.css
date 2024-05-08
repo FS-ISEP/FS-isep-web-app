@@ -1,4 +1,5 @@
-.title {
+.title 
+{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,14 +12,17 @@
     background-blend-mode:darken;
 }
   
-.title-text {
+.title-text 
+{
     color: white;
     font-size:150px;
     font-weight: bold;
     font-family: "Chuterolk";
     filter: opacity(100%);
 }
-.title-sub-text {
+
+.title-sub-text 
+{
     color: white;
     font-size:50px;
     font-weight: bold;
@@ -26,7 +30,8 @@
     filter: opacity(100%);
 }
 
-.box{
+.box
+{
     margin-bottom: 0px;
     width: 100%; 
     height: 750px; 
@@ -34,7 +39,8 @@
     flex-direction: column;
 }
 
-.b-box{
+.b-box
+{
     margin-bottom: 0px;
     width: 100%; 
     height: 750px; 
@@ -43,13 +49,13 @@
     color: white;
 }
 
-.small-box{
+.small-box
+{
     width: 100%; 
     height: 350px; 
     background: black;
     flex-direction: column;
     color:white;
-    
 }
 
 .small-box .borders
@@ -57,22 +63,27 @@
     width: 90%;
 }
 
-.wrapper{
+.wrapper
+{
     height: 100%;
 }
 
-.half {
+.half 
+{
     width: calc(50% - 2.5px);
     height: inherit;
     float:left;
 }
-.half-r {
+
+.half-r 
+{
     width: calc(50% - 2.5px);
     height: inherit;
     float:right;
 }
 
-.container{
+.container
+{
     position: relative;
     width:700px;
     height: 80%;
@@ -82,7 +93,8 @@
     background-color: white;
 }
 
-.wrapper-slider{
+.wrapper-slider
+{
      width: 400%;
     display: flex;
     animation: slider 15s infinite ease-out;
@@ -90,7 +102,8 @@
     white-space: nowrap;
 }
 
-@keyframes slider{
+@keyframes slider
+{
     0%{transform: translateX(0);}
     20%{transform: translateX(0%);}
     25%{transform: translateX(-25%);}
@@ -101,17 +114,20 @@
     95%{transform: translateX(-75%);}  
 }
 
-.wrapper img {
+.wrapper img 
+{
     width: 100%;
     white-space: nowrap;
 }
 
-.info-box {
+.info-box 
+{
     width: 90%;
     display: flex;
     flex-direction: column; /* Ensure elements stack vertically */
     align-items: center; /* Center items horizontally */
 }
+
 .info-box .info-title
 {
     margin-top: 75px;
