@@ -8,13 +8,15 @@ To run this project in a local environment, it is required:
 
 - Angular CLI <br>To run copy and paste in the terminal: <b>`npm install -g @angular/cli`</b>
 
-- Angular devkit <br>//To run copy and paste in the terminal: <b>`npm install -g @angular-devkit/build-angular`</b>
+- Angular devkit <br>To run copy and paste in the terminal: <b>`npm install -g @angular-devkit/build-angular`</b>
 
 Both can be obtained using Node.js packages.
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+
+Run `ng serve --host 0.0.0.0` to allow the app to be accessed outside the `localhost`. Navigate to `http://<your_local_ip_adress>:4200/`.
 
 ## Code scaffolding
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
