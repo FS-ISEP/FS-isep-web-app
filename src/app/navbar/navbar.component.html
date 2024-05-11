@@ -1,24 +1,31 @@
 <div class="topbar align-v">
+  <a routerLink="/" class="logo align-v">
+    <img
+      class="fs-isep-logo"
+      src="./assets/icons/fs-isep-logo.png"
+      alt="formula student isep logo" />
+  </a>
 
-    <a routerLink="/" class="logo align-v">
-        <img class="fs-isep-logo" src="./assets/icons/fs-isep-logo.png" alt="formula student isep logo" />
+  <div *ngIf="showSidebar; then renderSidebarToggle; else renderNavBtns"></div>
+
+  <ng-template #renderNavBtns>
+    <div class="nav-btns align-v">
+      <app-nav-buttons
+        class="nav-btns-wrapper align-v"
+        [navbarButtons]="navbarButtons"></app-nav-buttons>
+
+      <app-lang-flag class="lang-flag-wrapper align-h"></app-lang-flag>
+
+      <app-socials class="socials-wrapper"></app-socials>
+    </div>
+  </ng-template>
+
+  <ng-template #renderSidebarToggle>
+    <a class="sidebar-toggler align-hv" (click)="toggleSidebar()">
+      <img
+        class="closed_sidebar_icon"
+        src="./assets/icons/closed_sidebar.png"
+        alt="sidebar button" />
     </a>
-
-    <div *ngIf="showSidebar; then renderSidebarToggle; else renderNavBtns"></div>
-
-    <ng-template #renderNavBtns>
-        <div class="nav-btns align-v">
-            <app-nav-buttons class="nav-btns-wrapper align-v" [navbarButtons]="navbarButtons"></app-nav-buttons>
-
-            <app-lang-flag class="lang-flag-wrapper align-h"></app-lang-flag>
-
-            <app-socials class="socials-wrapper"></app-socials>
-        </div>
-    </ng-template>
-
-    <ng-template #renderSidebarToggle>
-        <a class="sidebar-toggler align-hv" (click)="toggleSidebar()">
-            <img class="closed_sidebar_icon" src="./assets/icons/closed_sidebar.png" alt="sidebar button" />
-        </a>
-    </ng-template>
+  </ng-template>
 </div>

@@ -1,16 +1,22 @@
-<a *ngIf="!isSidebarHidden" class="background-blur" (click)="toggleSidebar()"></a>
+<a
+  *ngIf="!isSidebarHidden"
+  class="background-blur"
+  (click)="toggleSidebar()"></a>
 
-<nav class="sidebar" [ngClass]="{'hidden': isSidebarHidden }">
-    <a class="close-sidebar-btn align-hv" (click)="toggleSidebar()">
-        <img class="close-icon" src="./assets/icons/close.png" alt="close button" />
-    </a>
+<nav class="sidebar" [ngClass]="{ hidden: isSidebarHidden }">
+  <a class="close-sidebar-btn align-hv" (click)="toggleSidebar()">
+    <img class="close-icon" src="./assets/icons/close.png" alt="close button" />
+  </a>
 
-    <app-nav-buttons-sidebar [navbarButtons]="navbarButtons" (sidebarToggled)="toggleSidebar()"
-        [isSidebarHidden]="isSidebarHidden"></app-nav-buttons-sidebar>
+  <app-nav-buttons-sidebar
+    [navbarButtons]="navbarButtons"
+    (sidebarToggled)="toggleSidebar()"
+    [isSidebarHidden]="isSidebarHidden"></app-nav-buttons-sidebar>
 
-    <app-lang-flag-sidebar [isSidebarHidden]="isSidebarHidden"></app-lang-flag-sidebar>
+  <app-lang-flag-sidebar
+    [isSidebarHidden]="isSidebarHidden"></app-lang-flag-sidebar>
 
-    <!-- <app-socials-sidebar></app-socials-sidebar> -->
+  <!-- <app-socials-sidebar></app-socials-sidebar> -->
 
-    <div class="sidebar-footer"></div>
+  <div class="sidebar-footer"></div>
 </nav>
