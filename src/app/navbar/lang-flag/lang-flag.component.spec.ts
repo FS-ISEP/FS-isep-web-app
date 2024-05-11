@@ -8,9 +8,8 @@ describe('LangFlagComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LangFlagComponent ]
-    })
-    .compileComponents();
+      declarations: [LangFlagComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(LangFlagComponent);
     component = fixture.componentInstance;

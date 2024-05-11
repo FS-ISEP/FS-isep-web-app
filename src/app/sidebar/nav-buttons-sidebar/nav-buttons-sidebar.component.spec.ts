@@ -8,9 +8,8 @@ describe('NavButtonsSidebarComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NavButtonsSidebarComponent ]
-    })
-    .compileComponents();
+      declarations: [NavButtonsSidebarComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(NavButtonsSidebarComponent);
     component = fixture.componentInstance;

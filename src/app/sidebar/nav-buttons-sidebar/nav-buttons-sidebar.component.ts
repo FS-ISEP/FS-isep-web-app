@@ -5,12 +5,11 @@ import { LanguageService } from 'src/app/services/language.service';
 @Component({
   selector: 'app-nav-buttons-sidebar',
   templateUrl: './nav-buttons-sidebar.component.html',
-  styleUrls: ['./nav-buttons-sidebar.component.css']
+  styleUrls: ['./nav-buttons-sidebar.component.css'],
 })
 export class NavButtonsSidebarComponent {
-
   @Input() public navbarButtons: NavBarButton[] = [];
-  @Input() public isSidebarHidden: boolean = true;
+  @Input() public isSidebarHidden = true;
 
   @Output()
   sidebarToggled = new EventEmitter();
@@ -18,11 +17,10 @@ export class NavButtonsSidebarComponent {
   languageService: LanguageService;
 
   constructor(languageService: LanguageService) {
-    this.languageService = languageService
+    this.languageService = languageService;
   }
 
   toggleSidebar() {
     this.sidebarToggled.emit();
   }
-
 }

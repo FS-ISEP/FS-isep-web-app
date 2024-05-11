@@ -4,12 +4,10 @@ import { Title } from '@angular/platform-browser';
 @Component({
   selector: 'app-about-page',
   templateUrl: './about-page.component.html',
-  styleUrls: ['./about-page.component.css']
+  styleUrls: ['./about-page.component.css'],
 })
 export class AboutPageComponent {
-
   constructor(private titleService: Title) {
-    this.titleService.setTitle("Sobre - Formula Student ISEP")
+    this.titleService.setTitle('Sobre - Formula Student ISEP');
   }
-
 }

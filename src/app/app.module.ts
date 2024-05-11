@@ -44,13 +44,10 @@ import { MapComponent } from './contacts-page/map/map.component';
     CarPageComponent,
     ContactInfoComponent,
     MailFormComponent,
-    MapComponent
+    MapComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
