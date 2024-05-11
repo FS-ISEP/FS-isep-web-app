@@ -1,40 +1,44 @@
-.title {
-    height: 100px;
-    background-color: black;
-    color: white;
-}
-
-.content{
-    flex-direction: column;
-}
-
-.subtitle{
+.title 
+{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.402);
     width: 100%;
-    margin-top: 30px;
+    height: 900px;
+    background-image: url('/assets/banner_images/team-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode:darken;
+}
+  
+.title-text 
+{
+    color: white;
+    font-size:150px;
+    font-weight: bold;
+    font-family: "Chuterolk";
+    filter: opacity(100%);
 }
 
-.redline{
-    height: 5px;
-    background-color: var(--isep-red);
-    width: 60%;
+.title-sub-text 
+{
+    color: white;
+    font-size:50px;
+    font-weight: bold;
+    font-family: "Chuterolk";
+    filter: opacity(100%);
 }
 
-.aboutus-text{
-    font-size: 25px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 80%;
-    margin-top: 10px;
-    text-align: justify;
-}
 
-.competition-img{
-    width: 80%;
-    margin-left: 10%;
-    height: 200px;
-    border: 1px solid black;
-}
 
-.end-buffer{
-    height: 10px;
-}
+
+
+
+
+
+
+
+
+
+
