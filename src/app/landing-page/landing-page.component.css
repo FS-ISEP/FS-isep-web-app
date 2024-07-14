@@ -1,36 +1,7 @@
-.title {
-    height: 100px;
-    background-color: black;
-    color: white;
-}
-
-.image-container {
-    flex-wrap: wrap;
-}
-
-.car-view {
-    max-width: 500px;
-    border: 5px solid var(--isep-red);
-    background-color: var(--white-gray);
-    margin: 50px 50px;
-}
-
-.ribbon {
-    background-color: var(--isep-red);
-    height: 250px;
-    box-shadow: 10px 10px 8px var(--shadow-gray);
-    border-top: 1px solid var(--shadow-gray);
-    margin: 50px 0 100px 0;
-}
-
-.middle-ribbon {
-    background-color: black;
+.car-image {
+    background-image: url('/assets/banners/car-image.jpeg');
+    background-size: cover;
+    background-position: center;
     width: 100%;
-    height: 200px;
-}
-
-.inner-ribbon {
-    background-color: lightgrey;
-    width: 100%;
-    height: 120px;
+    height: 100vh;
 }

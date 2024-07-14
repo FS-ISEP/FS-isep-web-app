@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { LanguageService } from '../services/language.service';
+import { LanguageService } from '../services/language/language.service';
 
 @Component({
   selector: 'app-shop-page',

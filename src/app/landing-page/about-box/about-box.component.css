@@ -1,0 +1,43 @@
+.box {
+    height: 750px;
+    background: #A0A0A0;
+    justify-content: space-evenly;
+}
+
+.half {
+    height: 100%;
+    width: 50%;
+    flex-direction: column;
+}
+
+.team-logo {
+    max-height: 20vw;
+}
+
+.textbox {
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 80%;
+    max-height: 80%;
+    text-align: justify;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    line-clamp: 16;
+    -webkit-line-clamp: 16;
+    -webkit-box-orient: vertical;
+}
+
+.button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--isep-red);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    color: black;
+    box-shadow: inset 200px 0 0 0 white;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}

@@ -1,7 +1,50 @@
-.footer-bar{
-    height: 70px;
-    background-color: black;
-    color: white;
-    font-family: "Chuterolk";
-    font-size: 20px;
+.footer-container {
+  justify-content: space-around;
+  height: 400px;
+  background: black;
+}
+
+.team-logo {
+  max-height: 20vw;
+}
+
+.middle {
+  flex-direction: column;
+  margin: 0 10px;
+}
+
+.footer-text {
+  font-size: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-item {
+  margin: 15px 0;
+  color: white;
+  transition: font-weight .1s ease-in-out;
+}
+
+.footer-item:hover {
+  font-weight: bold;
+  transition: font-weight .1s ease-in-out;
+}
+
+.socials-wrapper {
+  margin: 10px 0;
+}
+
+.social-logo-img {
+  width: 30px;
+}
+
+.social-logo-text {
+  color: white;
+  margin-left: 5px;
+  transition: font-weight .1s ease-in-out;
+}
+
+@media screen and (max-width: 900px) {
+  .social-logo-text {
+    width: 0;
+  }
 }

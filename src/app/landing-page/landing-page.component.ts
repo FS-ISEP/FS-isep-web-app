@@ -11,5 +11,4 @@ export class LandingPageComponent {
   constructor(private titleService: Title) {
     this.titleService.setTitle("Formula Student ISEP")
   }
-
 }
