@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { NavBarButton } from '../navbar-button';
-import { LanguageService } from '../services/language.service';
+import { LanguageService } from '../services/language/language.service';
 
 @Component({
   selector: 'app-sidebar',

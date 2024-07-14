@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { LanguageService } from 'src/app/services/language.service';
+import { LanguageService } from 'src/app/services/language/language.service';
 
 @Component({
   selector: 'app-lang-flag-sidebar',
