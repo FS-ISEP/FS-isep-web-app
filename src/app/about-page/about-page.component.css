@@ -1,40 +1,227 @@
-.title {
-    height: 100px;
-    background-color: black;
-    color: white;
+.title-wrapper {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.402);
+    background-image: url('/assets/banners/team-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
 }
 
-.content{
+.title-text {
+    color: white;
+    font-weight: bold;
+    font-family: "Chuterolk";
+    overflow: hidden;
+}
+
+.title {
+    font-size: 11vw;
+}
+
+.subtitle {
+    font-size: 5vw;
+}
+
+.box {
+    max-height: 750px;
+    background: rgb(196, 196, 196);
     flex-direction: column;
 }
 
-.subtitle{
-    display: flex;
+.wrapper {
+    height: 50vh;
+}
+
+.half {
+    width: 50%;
+    flex-direction: column;
+}
+
+.full-width {
     width: 100%;
-    margin-top: 30px;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
-.redline{
-    height: 5px;
-    background-color: var(--isep-red);
-    width: 60%;
+.info-box {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    /* Ensure elements stack vertically */
+    align-items: center;
+    /* Center items horizontally */
+    justify-content: center;
+    /* Center items vertically */
 }
 
-.aboutus-text{
+.button-wrapper {
+    width: 100%;
+    min-height: 70px;
+    margin-top: 50px;
+}
+
+.button {
+    cursor: pointer;
+    width: 20vw;
+    min-width: 170px;
+    border-radius: 20px;
+    transition: box-shadow .3s ease-in-out;
+}
+
+.button:hover {
+    color: black;
+    box-shadow: inset 20vw 0 0 0 white;
+    transition: box-shadow .3s ease-in-out;
+}
+
+.button-text {
+    margin-top: 8px;
+    color: black;
+    font-family: "Chuterolk";
+    font-size: max(3vw, 50px)
+}
+
+.separator {
+    height: 4px;
+    width: 90%;
+    background-color: black;
+}
+
+.aboutus-text {
     font-size: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 80%;
-    margin-top: 10px;
+    width: 90%;
+    margin: 25px 0;
     text-align: justify;
+    overflow: hidden;
+    display: -webkit-box;
+    line-clamp: 16;
+    -webkit-line-clamp: 16;
+    -webkit-box-orient: vertical;
 }
 
-.competition-img{
-    width: 80%;
-    margin-left: 10%;
-    height: 200px;
-    border: 1px solid black;
+.big-box {
+    flex-direction: column;
+    padding-bottom: 100px;
 }
 
-.end-buffer{
-    height: 10px;
+.big-box-title {
+    margin: 50px 0 20px 0;
+    font-family: "Chuterolk";
+    font-size: max(7vw, 50px);
+}
+
+.department {
+    width: 90%;
+    flex-direction: column;
+}
+
+.team-line {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.team-member {
+    width: 25%;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+@media screen and (max-width: 1100px) {
+    .team-member {
+        /* Two team-members per row on tablets */
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .team-member {
+        /* One team-member per row on smartphones */
+        width: 100%;
+    }
+}
+
+.round-image {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border: 5px solid black;
+}
+
+.round-image img {
+    width: 100%;
+}
+
+.name {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.function-name {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.small-box {
+    width: 100%;
+    height: 350px;
+    background: black;
+    color: white;
+}
+
+.last-box {
+    max-height: 750px;
+    background: rgb(196, 196, 196);
+}
+
+.last-box-title {
+    margin-top: 25px;
+}
+
+.event {
+    margin: 50px 0;
+}
+
+.event-img {
+    width: 200px;
+    background-color: #ccc;
+}
+
+.event-block {
+    width: calc(100% - 250px);
+    margin-left: 50px;
+}
+
+@media screen and (max-width: 1100px) {
+    .event-img {
+        width: 0;
+    }
+
+    .event-block {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+.event-title {
+    font-size: max(5vw, 40px)
+    /* font-size: 70px; */
+}
+
+.event-body {
+    font-size: 25px;
+    font-weight: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
