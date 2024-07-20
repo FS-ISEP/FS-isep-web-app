@@ -16,12 +16,11 @@ export class AppComponent {
 
   navbarButtons = [
     new NavBarButton("Sobre", "About Us", "/about"),
-    new NavBarButton("Equipa", "Team", "/team"),
+    // new NavBarButton("Equipa", "Team", "/team"),
     new NavBarButton("Carro", "Car", "/car"),
     new NavBarButton("Patrocinadores", "Sponsors", "/sponsors"),
-    new NavBarButton("Loja", "Shop", "/shop"),
+    // new NavBarButton("Loja", "Shop", "/shop"),
     new NavBarButton("Contactos", "Contact Us", "/contacts")
-   
   ]
 
   ngOnInit() {
