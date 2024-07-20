@@ -1,40 +1,115 @@
-.title {
-    height: 100px;
-    background-color: black;
-    color: white;
-}
-
-.content{
+.title-wrapper {
     flex-direction: column;
-}
-
-.subtitle{
-    display: flex;
     width: 100%;
-    margin-top: 30px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.402);
+    background-image: url('/assets/banners/car-image.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
 }
 
-.redline{
-    height: 5px;
-    background-color: var(--isep-red);
-    width: 60%;
+.title-text {
+    color: white;
+    font-weight: bold;
+    font-family: "Chuterolk";
+    overflow: hidden;
 }
 
-.aboutus-text{
-    font-size: 25px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 80%;
-    margin-top: 10px;
+.title {
+    font-size: 11vw;
+}
+
+.subtitle {
+    font-size: 5vw;
+}
+
+.small-box {
+    height: 350px;
+    background: black;
+}
+
+.small-box-text {
+    width: 90%;
+    color: white;
+    font-size: max(2.5vw, 25px);
     text-align: justify;
 }
 
-.competition-img{
-    width: 80%;
-    margin-left: 10%;
-    height: 200px;
-    border: 1px solid black;
+.box {
+    display: flex;
 }
 
-.end-buffer{
-    height: 10px;
+.white-box {
+    background: white;
+}
+
+.black-box {
+    background: black;
+    color: white;
+}
+
+.half {
+    width: 50%;
+    flex-direction: column;
+}
+
+.container {
+    width: 80%;
+    height: 80%;
+    overflow: hidden;
+    border: 20px solid white;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.wrapper-slider {
+    width: 400%;
+    display: flex;
+    animation: slider 15s infinite ease-out;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@keyframes slider {
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(0%);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    45% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    70% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-75%);
+    }
+
+    95% {
+        transform: translateX(-75%);
+    }
+}
+
+.info-title {
+    margin-top: 5vw;
+    font-size: 5vw;
+}
+
+.info-text {
+    font-size: 3vw;
 }
