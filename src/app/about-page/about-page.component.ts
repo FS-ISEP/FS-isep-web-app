@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { DEPARTMENTS } from '../services/departments/departments.service';
+import { DYNAMIC_EVENTS, STATIC_EVENTS } from '../services/events/events.service';
 
 enum IntroTextEnum {
   HISTORIA,
@@ -12,11 +14,12 @@ enum IntroTextEnum {
   styleUrls: ['./about-page.component.css'],
 })
 export class AboutPageComponent {
-  IntroText = IntroTextEnum
+  readonly IntroText = IntroTextEnum
+  readonly departments = DEPARTMENTS;
+  readonly staticEvents = STATIC_EVENTS;
+  readonly dynamicEvents = DYNAMIC_EVENTS;
 
   selectedButton: IntroTextEnum = IntroTextEnum.HISTORIA;
-  selectedColor: string = 'white';
-  unselectedColor: string = 'rgb(196, 196, 196)';
 
   constructor(private titleService: Title) {
     this.titleService.setTitle("Sobre - Formula Student ISEP")

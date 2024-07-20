@@ -43,205 +43,14 @@
 
 <div class="big-box align-hv">
     <div class="big-box-title">A Equipa</div>
-    <div class="department align-hv">
-        <div class="big-header">Líderes</div>
+    <div *ngFor="let department of departments" class="department align-hv">
+        <div class="big-header">{{ department.name }}</div>
         <div class="separator"></div>
         <div class="team-line">
-            <div class="team-member">
-                <div class="round-image"><img src="./assets/car_images/front.png"></div>
-                <div class="name">Luís Pinheiro</div>
-                <div class="function-name">Líder de Equipa</div>
-            </div>
-            <div class="team-member">
-                <div class="round-image"><img src="./assets/car_images/front.png"></div>
-                <div class="name">Diogo Castro</div>
-                <div class="function-name">Vice-líder de Equipa</div>
-            </div>
-        </div>
-    </div>
-    <div class="department align-hv">
-        <div class="big-header">Powertrain</div>
-        <div class="separator align-hv"></div>
-        <div class="team-line">
-            <div class="team-member">
-                <div class="round-image"><img src="./assets/car_images/front.png"></div>
-                <div class="name">João Sousa</div>
-                <div class="function-name">Sub-Líder</div>
-            </div>
-            <div class="team-member">
-                <div class="round-image"><img src="./assets/car_images/front.png"></div>
-                <div class="name">João Mendes</div>
-                <div class="function-name">Colega</div>
-            </div>
-            <div class="team-member">
-                <div class="round-image"><img src="./assets/car_images/front.png"></div>
-                <div class="name">Tomás Silva</div>
-                <div class="function-name">Colega</div>
-            </div>
-            <div class="team-member">
-                <div class="round-image"><img src="./assets/car_images/front.png"></div>
-                <div class="name">Beatriz Teixeira</div>
-                <div class="function-name">Colega</div>
-            </div>
-            <div class="team-member">
-                <div class="round-image"><img src="./assets/car_images/front.png"></div>
-                <div class="name">Diogo Silva</div>
-                <div class="function-name">Colega</div>
-            </div>
-            <div class="team-member">
-                <div class="round-image"><img src="./assets/car_images/front.png"></div>
-                <div class="name">Francisca Guimarães</div>
-                <div class="function-name">Colega</div>
-            </div>
-            <div class="team-member">
-                <div class="round-image"><img src="./assets/car_images/front.png"></div>
-                <div class="name">Diogo Cerqueira</div>
-                <div class="function-name">Colega</div>
-            </div>
-            <div class="team-member">
-                <div class="round-image"><img src="./assets/car_images/front.png"></div>
-                <div class="name">Pedro Martins</div>
-                <div class="function-name">Colega</div>
-            </div>
-
-        </div>
-    </div>
-    <div class="department align-hv">
-        <div class="big-header">Eletrónica</div>
-        <div class="separator align-hv"></div>
-        <div class="team-line">
-            <div class="team-member">
-                <div class="round-image"><img src="./assets/car_images/front.png"></div>
-                <div class="name">Guilherme Castro</div>
-                <div class="function-name">Sub-Líder</div>
-            </div>
-            <div class="team-member">
-                <div class="round-image"><img src="./assets/car_images/front.png"></div>
-                <div class="name">Diogo Faria</div>
-                <div class="function-name">Sub-Líder</div>
-            </div>
-            <div class="team-member">
-                <div class="round-image"><img src="./assets/car_images/front.png"></div>
-                <div class="name">João Martins</div>
-                <div class="function-name">Colega</div>
-            </div>
-            <div class="team-member">
-                <div class="round-image"><img src="./assets/car_images/front.png"></div>
-                <div class="name">Diogo Teixeira</div>
-                <div class="function-name">Colega</div>
-            </div>
-            <div class="team-member">
-                <div class="round-image"><img src="./assets/car_images/front.png"></div>
-                <div class="name">Pedro Moreira</div>
-                <div class="function-name">Colega</div>
-            </div>
-            <div class="team-member">
-                <div class="round-image"><img src="./assets/car_images/front.png"></div>
-                <div class="name">André Filipe</div>
-                <div class="function-name">Colega</div>
-            </div>
-
-        </div>
-    </div>
-    <div class="department align-hv">
-        <div class="big-header">Chassis, Suspenção e Aerodinâmica</div>
-        <div class="separator align-hv"></div>
-        <div class="team-line">
-            <div class="team-member">
-                <div class="round-image"><img src="./assets/car_images/front.png"></div>
-                <div class="name">Afonso Jesus</div>
-                <div class="function-name">Sub-Líder</div>
-            </div>
-            <div class="team-member">
-                <div class="round-image"><img src="./assets/car_images/front.png"></div>
-                <div class="name">Nuno Terra</div>
-                <div class="function-name">Sub-Líder</div>
-            </div>
-            <div class="team-member">
-                <div class="round-image"><img src="./assets/car_images/front.png"></div>
-                <div class="name">Vasco Amorim</div>
-                <div class="function-name">Colega</div>
-            </div>
-            <div class="team-member">
-                <div class="round-image"><img src="./assets/car_images/front.png"></div>
-                <div class="name">Jorge Castro</div>
-                <div class="function-name">Colega</div>
-            </div>
-            <div class="team-member">
-                <div class="round-image"><img src="./assets/car_images/front.png"></div>
-                <div class="name">Zé Augusto</div>
-                <div class="function-name">Colega</div>
-            </div>
-            <div class="team-member">
-                <div class="round-image"><img src="./assets/car_images/front.png"></div>
-                <div class="name">António Sá</div>
-                <div class="function-name">Colega</div>
-            </div>
-            <div class="team-member">
-                <div class="round-image"><img src="./assets/car_images/front.png"></div>
-                <div class="name">Gonçalo Pinto</div>
-                <div class="function-name">Colega</div>
-            </div>
-            <div class="team-member">
-                <div class="round-image"><img src="./assets/car_images/front.png"></div>
-                <div class="name">Francisco Moreira</div>
-                <div class="function-name">Colega</div>
-            </div>
-            <div class="team-member">
-                <div class="round-image"><img src="./assets/car_images/front.png"></div>
-                <div class="name">João França</div>
-                <div class="function-name">Colega</div>
-            </div>
-            <div class="team-member">
-                <div class="round-image"><img src="./assets/car_images/front.png"></div>
-                <div class="name">David Pinto</div>
-                <div class="function-name">Colega</div>
-            </div>
-            <div class="team-member">
-                <div class="round-image"><img src="./assets/car_images/front.png"></div>
-                <div class="name">Carlos</div>
-                <div class="function-name">Colega</div>
-            </div>
-            <div class="team-member">
-                <div class="round-image"><img src="./assets/car_images/front.png"></div>
-                <div class="name">David Moreira</div>
-                <div class="function-name">Colega</div>
-            </div>
-        </div>
-    </div>
-    <div class="department align-hv">
-        <div class="big-header">Gestão de Operações</div>
-        <div class="separator align-hv"></div>
-        <div class="team-line">
-            <div class="team-member">
-                <div class="round-image"><img src="./assets/car_images/front.png"></div>
-                <div class="name">João Magalhães</div>
-                <div class="function-name">Sub-Líder</div>
-            </div>
-            <div class="team-member">
-                <div class="round-image"><img src="./assets/car_images/front.png"></div>
-                <div class="name">Afonso Correia</div>
-                <div class="function-name">Colega</div>
-            </div>
-            <div class="team-member">
-                <div class="round-image"><img src="./assets/car_images/front.png"></div>
-                <div class="name">Nuno Pinho</div>
-                <div class="function-name">Colega</div>
-            </div>
-            <div class="team-member">
-                <div class="round-image"><img src="./assets/car_images/front.png"></div>
-                <div class="name">Tomás Barros</div>
-                <div class="function-name">Colega</div>
-            </div>
-            <div class="team-member">
-                <div class="round-image"><img src="./assets/car_images/front.png"></div>
-                <div class="name">Simão Queiroga</div>
-                <div class="function-name">Colega</div>
-            </div>
-            <div class="team-member">
-                <div class="round-image"><img src="./assets/car_images/front.png"></div>
-                <div class="name">Guilherme Silveira</div>
-                <div class="function-name">Colega</div>
+            <div *ngFor="let member of department.members" class="team-member">
+                <div class="round-image"><img src="{{member.imageUrl}}"></div>
+                <div class="name">{{member.name}}</div>
+                <div class="function-name">{{member.function}}</div>
             </div>
         </div>
     </div>
@@ -288,92 +97,22 @@
     <div class="big-box-title">Eventos Estáticos</div>
     <div class="separator align-hv"></div>
     <div class="department align-v">
-        <div class="event align-hv">
-            <img class="event-img" src="./assets/car_images/front.png" />
+        <div *ngFor="let event of staticEvents" class="event align-hv">
+            <img class="event-img" src="{{event.imageUrl}}" />
             <div class="event-block">
-                <div class="big-header event-title ">ENGINEERING DESIGN</div>
-                <div class="big-text event-body">
-                    Os estudantes devem apresentar os seus conhecimentos sobre o carro e conceitos de engenharia a um
-                    painel de juízes. Na maioria dos eventos há múltiplas rondas de design, cada uma com perguntas cada
-                    vez mais difíceis e sessões mais longas. A primeira ronda envolve todas as equipas, e centra-se nos
-                    conhecimentos fundamentais. Apenas as melhores equipas chegam às finais.
-                </div>
-            </div>
-        </div>
-        <div class="event align-hv">
-            <img class="event-img" src="./assets/car_images/front.png" />
-            <div class="event-block">
-                <div class="big-header event-title ">ENGINEERING DESIGN</div>
-                <div class="big-text event-body">
-                    Os estudantes devem apresentar os seus conhecimentos sobre o carro e conceitos de engenharia a um
-                    painel de juízes. Na maioria dos eventos há múltiplas rondas de design, cada uma com perguntas cada
-                    vez mais difíceis e sessões mais longas. A primeira ronda envolve todas as equipas, e centra-se nos
-                    conhecimentos fundamentais. Apenas as melhores equipas chegam às finais.
-                </div>
-            </div>
-        </div>
-        <div class="event align-hv">
-            <img class="event-img" src="./assets/car_images/front.png" />
-            <div class="event-block">
-                <div class="big-header event-title ">ENGINEERING DESIGN</div>
-                <div class="big-text event-body">
-                    Os estudantes devem apresentar os seus conhecimentos sobre o carro e conceitos de engenharia a um
-                    painel de juízes. Na maioria dos eventos há múltiplas rondas de design, cada uma com perguntas cada
-                    vez mais difíceis e sessões mais longas. A primeira ronda envolve todas as equipas, e centra-se nos
-                    conhecimentos fundamentais. Apenas as melhores equipas chegam às finais.
-                </div>
+                <div class="big-header event-title ">{{event.title}}</div>
+                <div class="big-text event-body">{{event.description}}</div>
             </div>
         </div>
     </div>
     <div class="big-box-title">Eventos Dinâmicos</div>
-    <div class="department align-hv">
-        <div class="separator"></div>
-        <div class="event align-hv">
-            <img class="event-img" src="./assets/car_images/front.png" />
+    <div class="separator align-hv"></div>
+    <div class="department align-v">
+        <div *ngFor="let event of dynamicEvents" class="event align-hv">
+            <img class="event-img" src="{{event.imageUrl}}" />
             <div class="event-block">
-                <div class="big-header event-title ">ENGINEERING DESIGN</div>
-                <div class="big-text event-body">
-                    Os estudantes devem apresentar os seus conhecimentos sobre o carro e conceitos de engenharia a um
-                    painel de juízes. Na maioria dos eventos há múltiplas rondas de design, cada uma com perguntas cada
-                    vez mais difíceis e sessões mais longas. A primeira ronda envolve todas as equipas, e centra-se nos
-                    conhecimentos fundamentais. Apenas as melhores equipas chegam às finais.
-                </div>
-            </div>
-        </div>
-        <div class="event align-hv">
-            <img class="event-img" src="./assets/car_images/front.png" />
-            <div class="event-block">
-                <div class="big-header event-title ">ENGINEERING DESIGN</div>
-                <div class="big-text event-body">
-                    Os estudantes devem apresentar os seus conhecimentos sobre o carro e conceitos de engenharia a um
-                    painel de juízes. Na maioria dos eventos há múltiplas rondas de design, cada uma com perguntas cada
-                    vez mais difíceis e sessões mais longas. A primeira ronda envolve todas as equipas, e centra-se nos
-                    conhecimentos fundamentais. Apenas as melhores equipas chegam às finais.
-                </div>
-            </div>
-        </div>
-        <div class="event align-hv">
-            <img class="event-img" src="./assets/car_images/front.png" />
-            <div class="event-block">
-                <div class="big-header event-title ">ENGINEERING DESIGN</div>
-                <div class="big-text event-body">
-                    Os estudantes devem apresentar os seus conhecimentos sobre o carro e conceitos de engenharia a um
-                    painel de juízes. Na maioria dos eventos há múltiplas rondas de design, cada uma com perguntas cada
-                    vez mais difíceis e sessões mais longas. A primeira ronda envolve todas as equipas, e centra-se nos
-                    conhecimentos fundamentais. Apenas as melhores equipas chegam às finais.
-                </div>
-            </div>
-        </div>
-        <div class="event align-hv">
-            <img class="event-img" src="./assets/car_images/front.png" />
-            <div class="event-block">
-                <div class="big-header event-title">ENGINEERING DESIGN</div>
-                <div class="big-text event-body">
-                    Os estudantes devem apresentar os seus conhecimentos sobre o carro e conceitos de engenharia a um
-                    painel de juízes. Na maioria dos eventos há múltiplas rondas de design, cada uma com perguntas cada
-                    vez mais difíceis e sessões mais longas. A primeira ronda envolve todas as equipas, e centra-se nos
-                    conhecimentos fundamentais. Apenas as melhores equipas chegam às finais.
-                </div>
+                <div class="big-header event-title ">{{event.title}}</div>
+                <div class="big-text event-body">{{event.description}}</div>
             </div>
         </div>
     </div>
