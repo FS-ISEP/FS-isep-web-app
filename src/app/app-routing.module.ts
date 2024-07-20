@@ -9,17 +9,17 @@ import { SponsorsPageComponent } from './sponsors-page/sponsors-page.component';
 // import { ShopPageComponent } from './shop-page/shop-page.component';
 
 const routes: Routes = [
-  { path: '', component: LandingPageComponent},
-  { path: 'about', component: AboutPageComponent},
-  { path: 'car', component: CarPageComponent},
-  { path: 'sponsors', component: SponsorsPageComponent},
-  { path: 'contacts', component: ContactsPageComponent},
+  { path: '', component: LandingPageComponent },
+  { path: 'about', component: AboutPageComponent },
+  { path: 'car', component: CarPageComponent },
+  { path: 'sponsors', component: SponsorsPageComponent },
+  { path: 'contacts', component: ContactsPageComponent },
   // { path: 'team', component: TeamPageComponent},
   // { path: 'shop', component: ShopPageComponent},
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

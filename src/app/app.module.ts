@@ -49,13 +49,10 @@ import { CarBoxComponent } from './landing-page/car-box/car-box.component';
     MapComponent,
     AboutBoxComponent,
     SponsorsSliderComponent,
-    CarBoxComponent
+    CarBoxComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

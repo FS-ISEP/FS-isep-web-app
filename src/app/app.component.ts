@@ -1,39 +1,41 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { NavBarButton } from './navbar-button';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'FS-isep-web-app';
 
   readonly MAX_FULL_CONTENT_WIDTH_PX = 992;
 
-  public showSidebar: boolean = false;
-  public isSidebarHidden: boolean = true;
+  public showSidebar = false;
+  public isSidebarHidden = true;
 
   navbarButtons = [
-    new NavBarButton("Sobre", "About Us", "/about"),
+    new NavBarButton('Sobre', 'About Us', '/about'),
     // new NavBarButton("Equipa", "Team", "/team"),
-    new NavBarButton("Carro", "Car", "/car"),
-    new NavBarButton("Patrocinadores", "Sponsors", "/sponsors"),
+    new NavBarButton('Carro', 'Car', '/car'),
+    new NavBarButton('Patrocinadores', 'Sponsors', '/sponsors'),
     // new NavBarButton("Loja", "Shop", "/shop"),
-    new NavBarButton("Contactos", "Contact Us", "/contacts")
-  ]
+    new NavBarButton('Contactos', 'Contact Us', '/contacts'),
+  ];
 
   ngOnInit() {
     this.showSidebarCondition();
   }
 
   @HostListener('window:resize', ['$event'])
-  onResize(event: UIEvent) {
+  onResize() {
     this.showSidebarCondition();
   }
 
   private showSidebarCondition() {
-    window.innerWidth < this.MAX_FULL_CONTENT_WIDTH_PX ? this.showSidebar = true : this.showSidebar = false;
+    window.innerWidth < this.MAX_FULL_CONTENT_WIDTH_PX
+      ? (this.showSidebar = true)
+      : (this.showSidebar = false);
   }
 
   toggleSidebar(): void {
@@ -41,9 +43,9 @@ export class AppComponent {
 
     // Disable scroll when sidebar is visible. Scroll bar width is 17px
     if (this.isSidebarHidden) {
-      document.body.style.overflow = "auto";
+      document.body.style.overflow = 'auto';
     } else {
-      document.body.style.overflow = "hidden";
+      document.body.style.overflow = 'hidden';
     }
   }
 }

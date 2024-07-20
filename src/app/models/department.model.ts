@@ -1,6 +1,6 @@
-import { TeamMember } from "./team-member.model"
+import { TeamMember } from './team-member.model';
 
 export interface Department {
-    name: string
-    members: TeamMember[]
+  name: string;
+  members: TeamMember[];
 }
