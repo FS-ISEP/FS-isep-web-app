@@ -1,7 +1,27 @@
-.title {
-  height: 100px;
-  background-color: black;
+.title-wrapper {
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.402);
+  background-image: url('/assets/banners/isep-image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+}
+
+.title-text {
   color: white;
+  font-weight: bold;
+  font-family: "Chuterolk";
+  overflow: hidden;
+}
+
+.title {
+  font-size: 11vw;
+}
+
+.subtitle {
+  font-size: 5vw;
 }
 
 .wrapper{
@@ -15,13 +35,6 @@
   float: left;
 }
 
-.separator {
-  width: 5px;
-  height: inherit;
-  background-color: var(--isep-red);
-  float: left;  
-}
-
 .mapouter {
-  margin: 50px 0;
+  margin-top: 50px;
 }
