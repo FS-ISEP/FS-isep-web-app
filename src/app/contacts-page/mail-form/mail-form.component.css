@@ -31,15 +31,17 @@ textarea{
   height: 15vh;
 }
 
-.btnsub {
-  border-radius: 4px;
-  color: white;
+.button {
+  padding: 10px 20px;
   background-color: var(--isep-red);
-  padding: 12px 20px;
-
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
-.btnsub:hover {
-  text-decoration: underline;
+.button:hover {
+  color: black;
+  box-shadow: inset 200px 0 0 0 white;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
