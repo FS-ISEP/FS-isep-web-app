@@ -1,71 +1,85 @@
-<div class="title big-header align-hv">Quem Somos?</div>
+<div class="title-wrapper align-hv">
+    <p class="title title-text">Sobre Nós</p>
+    <p class="subtitle title-text">Making an Idea Accelerate in Reality</p>
+</div>
 
-<div class="content align-h">
+<div class="box align-v">
+    <div class="button-wrapper align-h">
+        <a class="button align-hv" (click)="selectButton(IntroText.HISTORIA)"
+            [style.background-color]="selectedButton === IntroText.HISTORIA ? 'white' : 'transparent'">
+            <div class="button-text">História</div>
+        </a>
+        <a class="button align-hv" (click)="selectButton(IntroText.MISSAO)"
+            [style.background-color]="selectedButton === IntroText.MISSAO ? 'white' : 'transparent'">
+            <div class="button-text">Missão</div>
+        </a>
+    </div>
+    <div class="separator"></div>
+    <div *ngIf="selectedButton === IntroText.HISTORIA" class="aboutus-text">
+        {{historyText}}
+    </div>
+    <div *ngIf="selectedButton === IntroText.MISSAO" class="aboutus-text">
+        {{missionText}}
+    </div>
+</div>
 
-    <div class="subtitle medium-header align-h">A nossa identidade e ambições para o futuro</div>
-    <div class="redline-wrapper align-h">
-        <div class="redline"></div>
+<div class="big-box align-hv">
+    <div class="big-box-title">A Equipa</div>
+    <div *ngFor="let department of departments" class="department align-hv">
+        <div class="big-header">{{ department.name }}</div>
+        <div class="separator"></div>
+        <div class="team-line">
+            <div *ngFor="let member of department.members" class="team-member">
+                <div class="round-image"><img src="{{member.imageUrl}}"></div>
+                <div class="name">{{member.name}}</div>
+                <div class="function-name">{{member.function}}</div>
+            </div>
+        </div>
     </div>
+</div>
 
-    <div class="text-wrapper align-h">
-        <div class="aboutus-text align-h">A Formula Student ISEP é uma equipa constituída por futuros engenheiros de
-            diferentes
-            áreas que pretendem construir um formula single-seater para competir em eventos nacionais e internacionais
-            Formula Student.
-        </div>
-    </div>
-    <div class="text-wrapper align-h">
-        <div class="aboutus-text align-h">O nosso objetivo é aprender, inovar e pôr em prática os nossos conhecimentos
-            obtidos
-            em âmbito universitário, tendo também em conta as informações partilhadas por empresas relevantes ao
-            projeto.
-        </div>
-    </div>
-    <div class="text-wrapper align-h">
-        <div class="aboutus-text align-h">Para que o futuro a longo prazo da equipa seja promissor, estamos, também,
-            empenhados em organizar a equipa de forma clara e estruturada.
-        </div>
-    </div>
-    <div class="text-wrapper align-h">
-        <div class="aboutus-text align-h">Com o carro finalizado queremos competir com a ambição de vencer.
-        </div>
-    </div>
+<div class="small-box align-hv">
+    <div class="big-box-title">O que é o Formula Student?</div>
+</div>
 
-    <div class="subtitle medium-header align-h">A competição</div>
-    <div class="redline-wrapper align-h">
-        <div class="redline"></div>
+<div class="last-box align-h">
+    <div class="half align-v">
+        <div class="last-box-title big-header">Objetivo</div>
+        <div class="separator"></div>
+        <div class="aboutus-text">
+            {{goalText}}
+        </div>
     </div>
+    <div class="half align-v">
+        <div class="last-box-title big-header">Eventos</div>
+        <div class="separator"></div>
+        <div class="aboutus-text">
+            {{eventsText}}
+        </div>
+    </div>
+</div>
 
-    <div class="text-wrapper align-h">
-        <div class="aboutus-text align-h">A Formula Student é uma competição que envolve universidades de todo o mundo,
-            organizada pelo Instituto da Engenharia mecânica, no Reino Unido e pela Sociedade de Engenheiros da
-            Mobilidade.
+<div class="big-box align-hv">
+    <div class="big-box-title">Eventos Estáticos</div>
+    <div class="separator align-hv"></div>
+    <div class="department align-v">
+        <div *ngFor="let event of staticEvents" class="event align-hv">
+            <img class="event-img" src="{{event.imageUrl}}" />
+            <div class="event-block">
+                <div class="big-header event-title ">{{event.title}}</div>
+                <div class="big-text event-body">{{event.description}}</div>
+            </div>
         </div>
     </div>
-    <div class="text-wrapper align-h">
-        <div class="aboutus-text align-h">Com o objetivo final de competir em eventos nacionais e internacionais, cada
-            equipa, constituída apenas por
-            estudantes, gere e planeia o projeto, incluindo o desenho e construção de um monolugar, do tipo formula 1 em
-            escala
-            reduzida.
+    <div class="big-box-title">Eventos Dinâmicos</div>
+    <div class="separator align-hv"></div>
+    <div class="department align-v">
+        <div *ngFor="let event of dynamicEvents" class="event align-hv">
+            <img class="event-img" src="{{event.imageUrl}}" />
+            <div class="event-block">
+                <div class="big-header event-title ">{{event.title}}</div>
+                <div class="big-text event-body">{{event.description}}</div>
+            </div>
         </div>
     </div>
-    <!-- TODO: Fix the bullet points -->
-    <div class="text-wrapper align-h">
-        <div class="aboutus-text align-h"><br>A competição é separada em 3 categorias:
-        </div>
-    </div>
-    <div class="text-wrapper align-h">
-        <div class="aboutus-text align-h">
-            <ul>
-                <li>Classe 2: Apresentação do projeto, incluindo o protótipo;</li>
-                <li>Classe 1: Provas dinâmicas de um formula movido a combustão;</li>
-                <li>Classe 1A: Provas dinâmicas de um formula movido a energias alternativas.</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="competition-img">Imagens competição</div>
-    <div class="end-buffer"></div>
-
 </div>
