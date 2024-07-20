@@ -8,9 +8,8 @@ describe('LangFlagSidebarComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LangFlagSidebarComponent ]
-    })
-    .compileComponents();
+      declarations: [LangFlagSidebarComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(LangFlagSidebarComponent);
     component = fixture.componentInstance;

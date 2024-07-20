@@ -1,85 +1,93 @@
 <div class="title-wrapper align-hv">
-    <p class="title title-text">Sobre Nós</p>
-    <p class="subtitle title-text">Making an Idea Accelerate in Reality</p>
+  <p class="title title-text">Sobre Nós</p>
+  <p class="subtitle title-text">Making an Idea Accelerate in Reality</p>
 </div>
 
 <div class="box align-v">
-    <div class="button-wrapper align-h">
-        <a class="button align-hv" (click)="selectButton(IntroText.HISTORIA)"
-            [style.background-color]="selectedButton === IntroText.HISTORIA ? 'white' : 'transparent'">
-            <div class="button-text">História</div>
-        </a>
-        <a class="button align-hv" (click)="selectButton(IntroText.MISSAO)"
-            [style.background-color]="selectedButton === IntroText.MISSAO ? 'white' : 'transparent'">
-            <div class="button-text">Missão</div>
-        </a>
-    </div>
-    <div class="separator"></div>
-    <div *ngIf="selectedButton === IntroText.HISTORIA" class="aboutus-text">
-        {{historyText}}
-    </div>
-    <div *ngIf="selectedButton === IntroText.MISSAO" class="aboutus-text">
-        {{missionText}}
-    </div>
+  <div class="button-wrapper align-h">
+    <a
+      class="button align-hv"
+      (click)="selectButton(IntroText.HISTORIA)"
+      [style.background-color]="
+        selectedButton === IntroText.HISTORIA ? 'white' : 'transparent'
+      ">
+      <div class="button-text">História</div>
+    </a>
+    <a
+      class="button align-hv"
+      (click)="selectButton(IntroText.MISSAO)"
+      [style.background-color]="
+        selectedButton === IntroText.MISSAO ? 'white' : 'transparent'
+      ">
+      <div class="button-text">Missão</div>
+    </a>
+  </div>
+  <div class="separator"></div>
+  <div *ngIf="selectedButton === IntroText.HISTORIA" class="aboutus-text">
+    {{ historyText }}
+  </div>
+  <div *ngIf="selectedButton === IntroText.MISSAO" class="aboutus-text">
+    {{ missionText }}
+  </div>
 </div>
 
 <div class="big-box align-hv">
-    <div class="big-box-title">A Equipa</div>
-    <div *ngFor="let department of departments" class="department align-hv">
-        <div class="big-header">{{ department.name }}</div>
-        <div class="separator"></div>
-        <div class="team-line">
-            <div *ngFor="let member of department.members" class="team-member">
-                <div class="round-image"><img src="{{member.imageUrl}}"></div>
-                <div class="name">{{member.name}}</div>
-                <div class="function-name">{{member.function}}</div>
-            </div>
-        </div>
+  <div class="big-box-title">A Equipa</div>
+  <div *ngFor="let department of departments" class="department align-hv">
+    <div class="big-header">{{ department.name }}</div>
+    <div class="separator"></div>
+    <div class="team-line">
+      <div *ngFor="let member of department.members" class="team-member">
+        <div class="round-image"><img src="{{ member.imageUrl }}" /></div>
+        <div class="name">{{ member.name }}</div>
+        <div class="function-name">{{ member.function }}</div>
+      </div>
     </div>
+  </div>
 </div>
 
 <div class="small-box align-hv">
-    <div class="big-box-title">O que é o Formula Student?</div>
+  <div class="big-box-title">O que é o Formula Student?</div>
 </div>
 
 <div class="last-box align-h">
-    <div class="half align-v">
-        <div class="last-box-title big-header">Objetivo</div>
-        <div class="separator"></div>
-        <div class="aboutus-text">
-            {{goalText}}
-        </div>
+  <div class="half align-v">
+    <div class="last-box-title big-header">Objetivo</div>
+    <div class="separator"></div>
+    <div class="aboutus-text">
+      {{ goalText }}
     </div>
-    <div class="half align-v">
-        <div class="last-box-title big-header">Eventos</div>
-        <div class="separator"></div>
-        <div class="aboutus-text">
-            {{eventsText}}
-        </div>
+  </div>
+  <div class="half align-v">
+    <div class="last-box-title big-header">Eventos</div>
+    <div class="separator"></div>
+    <div class="aboutus-text">
+      {{ eventsText }}
     </div>
+  </div>
 </div>
 
 <div class="big-box align-hv">
-    <div class="big-box-title">Eventos Estáticos</div>
-    <div class="separator align-hv"></div>
-    <div class="department align-v">
-        <div *ngFor="let event of staticEvents" class="event align-hv">
-            <img class="event-img" src="{{event.imageUrl}}" />
-            <div class="event-block">
-                <div class="big-header event-title ">{{event.title}}</div>
-                <div class="big-text event-body">{{event.description}}</div>
-            </div>
-        </div>
+  <div class="big-box-title">Eventos Estáticos</div>
+  <div class="separator align-hv"></div>
+  <div class="department align-v">
+    <div *ngFor="let event of staticEvents" class="event align-hv">
+      <img class="event-img" src="{{ event.imageUrl }}" />
+      <div class="event-block">
+        <div class="big-header event-title">{{ event.title }}</div>
+        <div class="big-text event-body">{{ event.description }}</div>
+      </div>
     </div>
-    <div class="big-box-title">Eventos Dinâmicos</div>
-    <div class="separator align-hv"></div>
-    <div class="department align-v">
-        <div *ngFor="let event of dynamicEvents" class="event align-hv">
-            <img class="event-img" src="{{event.imageUrl}}" />
-            <div class="event-block">
-                <div class="big-header event-title ">{{event.title}}</div>
-                <div class="big-text event-body">{{event.description}}</div>
-            </div>
-        </div>
+  </div>
+  <div class="big-box-title">Eventos Dinâmicos</div>
+  <div class="separator align-hv"></div>
+  <div class="department align-v">
+    <div *ngFor="let event of dynamicEvents" class="event align-hv">
+      <img class="event-img" src="{{ event.imageUrl }}" />
+      <div class="event-block">
+        <div class="big-header event-title">{{ event.title }}</div>
+        <div class="big-text event-body">{{ event.description }}</div>
+      </div>
     </div>
+  </div>
 </div>
